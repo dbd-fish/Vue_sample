@@ -1,4 +1,4 @@
 <template>
-  <p>App</p>
+  <p>ブログサイト</p>
   <router-view />
 </template>
