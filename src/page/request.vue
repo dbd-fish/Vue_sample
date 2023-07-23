@@ -5,27 +5,26 @@
       <template v-slot:image>
         <v-img gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"></v-img>
       </template>
-
       <template v-slot:prepend>
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+        <v-btn :to="{ path: 'home' }">
+          私のブログ
+        </v-btn>
+
       </template>
-
       <v-app-bar-title>お問い合わせ</v-app-bar-title>
-
       <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
       <template v-slot:extension>
-        <v-tabs v-model="tab" align-tabs="title">
-          <v-tab v-for="item in items" :key="item" :value="item">
-            {{ item }}
-          </v-tab>
-        </v-tabs>
+        <v-btns v-model="tab" align-tabs="title">
+          <v-btn v-for="tab in tab_list" :key="tab.tab_name" :value="tab.tab_name" :to="{ path: tab.tab_path }">
+            {{ tab.tab_name }}
+          </v-btn>
+        </v-btns>
       </template>
     </v-app-bar>
+    <v-main>
+      お問い合わせ
+    </v-main>
   </v-layout>
 </template>
 
@@ -34,11 +33,17 @@ export default {
   data() {
     return {
       tab: null,
-      items: [
-        'プロフィール', '経歴', `事業内容`, '仕事関連の記事', '趣味の記事', 'お問い合わせ',
+      tab_list: [
+        { tab_name: 'プロフィール', tab_path: 'profile' },
+        { tab_name: '経歴', tab_path: 'resume' },
+        { tab_name: `事業内容`, tab_path: 'service' },
+        { tab_name: '仕事関連の記事', tab_path: 'job_article_list' },
+        { tab_name: '趣味の記事', tab_path: 'private_article_list' },
+        { tab_name: 'お問い合わせ', tab_path: 'request' },
       ],
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     }
   },
 }
+
+
 </script>
