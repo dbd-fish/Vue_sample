@@ -1,9 +1,50 @@
+
 <template>
-  <div class="menu">
-    <h1>home</h1>
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <a class="btn btn-primary btn-lg" href="/home" role="button">home</a><br>
-      <a class="btn btn-secondary btn-lg" href="/resume" role="button">resume</a>
-    </div>
-  </div>
+  <v-layout>
+    <v-app-bar color="teal-darken-4" image="https://picsum.photos/1920/1080?random">
+      <template v-slot:image>
+        <v-img gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"></v-img>
+      </template>
+      <template v-slot:prepend>
+        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      </template>
+      <v-app-bar-title>ホーム</v-app-bar-title>
+      <v-spacer></v-spacer>
+      <!-- <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn> -->
+      <template v-slot:extension>
+        <v-btns v-model="tab" align-tabs="title">
+          <v-btn v-for="tab in tab_list" :key="tab.tab_name" :value="tab.tab_name" :to="{ path: tab.tab_path }">
+            {{ tab.tab_name }}
+          </v-btn>
+        </v-btns>
+      </template>
+    </v-app-bar>
+  </v-layout>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      tab: null,
+      tab_list: [
+        { tab_name: 'プロフィール', tab_path: 'profile' },
+        { tab_name: '経歴', tab_path: 'resume' },
+        { tab_name: `事業内容`, tab_path: 'service' },
+        { tab_name: '仕事関連の記事', tab_path: 'job_article_list' },
+        { tab_name: '趣味の記事', tab_path: 'job_article_list' },
+        { tab_name: 'お問い合わせ', tab_path: 'request' },
+      ],
+    }
+  },
+  methods: {
+    moveNextScreen: function () {
+      this.$router.push('/second')
+    }
+  }
+}
+
+
+</script>
