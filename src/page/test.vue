@@ -1,6 +1,6 @@
 
 <template>
-  <someMarkdown class="md" />
+  <someMarkdown resume_md />
 </template>
 
 <script>

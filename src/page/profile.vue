@@ -25,6 +25,7 @@
     <v-main>
       <div class="md">
         プロフィール
+        <profile_md class="aaa" />
       </div>
     </v-main>
     <v-main>
@@ -35,11 +36,13 @@
 
 <script>
 import profile_card from "@/components/profile_card.vue";
+import profile_md from "@/components/markdown/profile.md";
 
 
 export default {
   components: {
-    profile_card
+    profile_card,
+    profile_md
   },
   data() {
     return {
@@ -57,18 +60,8 @@ export default {
 }
 </script>
 
-<style>
-div.md {
-  /* background-color: #ffffff; */
-  background-color: #f5f5f5;
-  border-inline: red;
-  color: #262626;
-  font-size: 1.0rem;
-  line-height: 1.5;
-
-  padding: 2.5rem;
-  border: 2px solid #f5f5f5;
-  border-top: none;
-  border-bottom: none;
+<style scoped>
+:deep(h1) {
+  background-color: rgb(55, 228, 228);
 }
 </style>

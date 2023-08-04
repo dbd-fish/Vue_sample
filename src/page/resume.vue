@@ -24,7 +24,7 @@
     </v-app-bar>
     <v-main>
       <div class="md">
-        <resume_md />
+        <resume_md class="md" />
       </div>
     </v-main>
     <v-main>
@@ -62,44 +62,4 @@ export default {
 }
 </script>
 
-<style >
-table,
-td,
-th {
-  border: 3px #0f1419 solid;
-  border-collapse: collapse;
-  /* color: red; */
-  padding: 0.5rem;
-}
-
-table {
-  margin: 2rem 0em 20px;
-  table-layout: fixed;
-}
-
-th {
-  background-color: #dcdcdc;
-  font-weight: bold;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-h1 {
-  border-bottom: solid;
-  padding-top: 1rem;
-  padding-bottom: 0.2rem;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  border-bottom: solid;
-  border-bottom-width: 0.1rem;
-  padding-top: 1rem;
-  padding-bottom: 0.2rem;
-}
-</style>
+<style ></style>
