@@ -23,7 +23,9 @@
       </template>
     </v-app-bar>
     <v-main>
-      お問い合わせ
+      <div class="md">
+        お問い合わせ
+      </div>
     </v-main>
     <v-main>
       <profile_card />

@@ -23,7 +23,9 @@
       </template>
     </v-app-bar>
     <v-main>
-      事業内容
+      <div class="md">
+        事業内容
+      </div>
     </v-main>
     <v-main>
       <profile_card />

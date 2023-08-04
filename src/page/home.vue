@@ -23,7 +23,7 @@
       </template>
     </v-app-bar>
     <v-main>
-      <div>
+      <div class="md">
         ホーム
       </div>
     </v-main>

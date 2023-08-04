@@ -23,7 +23,9 @@
       </template>
     </v-app-bar>
     <v-main>
-      仕事関連の記事
+      <div class="md">
+        仕事関連の記事
+      </div>
     </v-main>
     <v-main>
       <profile_card />
