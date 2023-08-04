@@ -25,11 +25,19 @@
     <v-main>
       事業内容
     </v-main>
+    <v-main>
+      <profile_card />
+    </v-main>
   </v-layout>
 </template>
 
 <script>
+import profile_card from "@/components/profile_card.vue";
+
 export default {
+  components: {
+    profile_card
+  },
   data() {
     return {
       tab: null,

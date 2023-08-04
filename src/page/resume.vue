@@ -24,12 +24,12 @@
     </v-app-bar>
     <v-main>
       <div class="md">
-        <someMarkdown />
+        <resume_md />
       </div>
     </v-main>
     <v-main>
       <profile_card />
-      <v-card class="profile-card" max-width="400" color="#f5f5f5">
+      <v-card max-width="400" color="#f5f5f5">
         <v-card-title>test</v-card-title>
       </v-card>
     </v-main>
@@ -38,12 +38,12 @@
 </template>
 
 <script>
-import someMarkdown from "@/components/markdown/test.md";
-import profile_card from "@/components/profile-card.vue";
+import resume_md from "@/components/markdown/resume.md";
+import profile_card from "@/components/profile_card.vue";
 
 export default {
   components: {
-    someMarkdown,
+    resume_md,
     profile_card
   },
   data() {
@@ -82,12 +82,9 @@ th {
   font-weight: bold;
 }
 
-
 ul {
   padding-left: 20px;
 }
-
-
 
 h1 {
   border-bottom: solid;
@@ -104,46 +101,5 @@ h6 {
   border-bottom-width: 0.1rem;
   padding-top: 1rem;
   padding-bottom: 0.2rem;
-}
-
-div.md {
-  /* background-color: #ffffff; */
-  background-color: #f5f5f5;
-  border-inline: red;
-  color: #262626;
-  font-size: 1.0rem;
-  line-height: 1.5;
-  max-width: 1000px;
-  min-width: 100px;
-  word-wrap: break-word;
-  padding: 2.5rem;
-  border: 2px solid #f5f5f5;
-  border-top: none;
-  border-bottom: none;
-}
-
-@media screen and (max-width: 767px) {
-  div.md {
-    width: auto;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  div.md {
-    width: 1000px;
-  }
-}
-
-#card-img {
-  height: 100px;
-  border-radius: 50%;
-  background-image: url("image.jpg");
-  background-position: 54% 36%;
-  margin: 1rem;
-}
-
-.profile-card {
-  padding: 20rem;
-  margin: 2.5rem;
 }
 </style>

@@ -23,13 +23,24 @@
       </template>
     </v-app-bar>
     <v-main>
-      プロフィール
+      <div class="md">
+        プロフィール
+      </div>
+    </v-main>
+    <v-main>
+      <profile_card />
     </v-main>
   </v-layout>
 </template>
 
 <script>
+import profile_card from "@/components/profile_card.vue";
+
+
 export default {
+  components: {
+    profile_card
+  },
   data() {
     return {
       tab: null,
@@ -44,6 +55,20 @@ export default {
     }
   },
 }
-
-
 </script>
+
+<style>
+div.md {
+  /* background-color: #ffffff; */
+  background-color: #f5f5f5;
+  border-inline: red;
+  color: #262626;
+  font-size: 1.0rem;
+  line-height: 1.5;
+
+  padding: 2.5rem;
+  border: 2px solid #f5f5f5;
+  border-top: none;
+  border-bottom: none;
+}
+</style>

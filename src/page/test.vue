@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import someMarkdown from "@/components/markdown/test.md";
+import someMarkdown from "@/components/markdown/resume.md";
 
 export default {
   components: {
