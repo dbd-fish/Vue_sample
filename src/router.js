@@ -8,6 +8,8 @@ import service from '@/page/service.vue'
 import private_article_list from '@/page/private_article_list.vue'
 import job_article_list from '@/page/job_article_list.vue'
 
+import test from '@/page/test.vue'
+
 const routes = [
   { path: '/', name: 'default', component: home },
   { path: '/home', name: 'home', component: home },
@@ -18,6 +20,8 @@ const routes = [
 
   { path: '/job_article_list', name: 'job_article_list', component: job_article_list },
   { path: '/private_article_list', name: 'private_article_list', component: private_article_list },
+
+  { path: '/test', name: 'test', component: test },
 
 ]
 

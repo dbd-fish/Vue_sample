@@ -9,14 +9,25 @@
   },
   "dependencies": {
     "@mdi/font": "^7.2.96",
+    "highlight.js": "^11.8.0",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "marked": "^5.1.2",
+    "md-editor-v3": "^4.2.2",
     "vue": "^3.3.4",
+    "vue-markdown": "^2.2.4",
     "vue-router": "^4.2.4",
     "vuetify": "^3.3.9",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@mdi/js": "^7.2.96",
+    "@types/marked": "^5.0.1",
     "@vitejs/plugin-vue": "^4.2.3",
-    "vite": "^4.3.9"
+    "markdown-to-vue-loader": "^3.1.5",
+    "vite": "^4.3.9",
+    "vite-plugin-vue-markdown": "^0.23.7",
+    "vue-loader": "^17.2.2",
+    "webpack": "^5.88.2"
   }
 }
