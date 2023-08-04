@@ -22,12 +22,35 @@
         </v-btns>
       </template>
     </v-app-bar>
-    <v-main sm="4">
+    <v-main>
       <div class="md">
         <someMarkdown />
       </div>
-
     </v-main>
+    <v-main>
+      <v-card class="profile-card" max-width="400" color="#f5f5f5">
+        <v-img class="mx-auto" height="150" width="150" id="card-img"
+          src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" cover>
+
+        </v-img>
+        <v-card-title>執筆者:dbd-fish</v-card-title>
+        <v-card-text>
+          <div>愛知県在住のエンジニア。</div>
+          <div>webバックエンド業務をメインだが、フロントを担当したりインフラの資格があったりする。</div>
+        </v-card-text>
+
+        <v-card-actions>
+          <v-btn color="orange" :to="{ path: 'profile' }">
+            プロフィール詳細
+          </v-btn>
+
+        </v-card-actions>
+      </v-card>
+      <v-card class="profile-card" max-width="400" color="#f5f5f5">
+        <v-card-title>test</v-card-title>
+      </v-card>
+    </v-main>
+
   </v-layout>
 </template>
 
@@ -66,12 +89,12 @@ th {
 
 table {
   margin: 2rem 0em 20px;
+  table-layout: fixed;
 }
 
 th {
   background-color: #dcdcdc;
   font-weight: bold;
-
 }
 
 
@@ -79,17 +102,7 @@ ul {
   padding-left: 20px;
 }
 
-div.md {
-  width: 1000px;
-  background-color: #ffffff;
-  border-inline: red;
-  color: #262626;
-  font-size: 1.0rem;
-  line-height: 1.5;
-  max-width: 1000px;
-  min-width: 100px;
-  word-wrap: break-word;
-}
+
 
 h1 {
   border-bottom: solid;
@@ -106,5 +119,46 @@ h6 {
   border-bottom-width: 0.1rem;
   padding-top: 1rem;
   padding-bottom: 0.2rem;
+}
+
+div.md {
+  /* background-color: #ffffff; */
+  background-color: #f5f5f5;
+  border-inline: red;
+  color: #262626;
+  font-size: 1.0rem;
+  line-height: 1.5;
+  max-width: 1000px;
+  min-width: 100px;
+  word-wrap: break-word;
+  padding: 2.5rem;
+  border: 2px solid #f5f5f5;
+  border-top: none;
+  border-bottom: none;
+}
+
+@media screen and (max-width: 767px) {
+  div.md {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  div.md {
+    width: 1000px;
+  }
+}
+
+#card-img {
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("image.jpg");
+  background-position: 54% 36%;
+  margin: 1rem;
+}
+
+.profile-card {
+  padding: 20rem;
+  margin: 2.5rem;
 }
 </style>
