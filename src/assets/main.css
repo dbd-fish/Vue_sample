@@ -16,21 +16,31 @@ div.md {
   color: #262626;
   font-size: 1.0rem;
   line-height: 1.5;
-
   padding: 2.5rem;
   border: 2px solid #f5f5f5;
   border-top: none;
   border-bottom: none;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 767px) {
   div.md {
     width: auto;
   }
+
+  img.md {
+    width: 500px;
+    margin: 1rem;
+  }
 }
 
 @media screen and (min-width: 767px) {
   div.md {
     width: 1000px;
+  }
+
+  img.md {
+    width: 800px;
+    margin: 1rem
   }
 }

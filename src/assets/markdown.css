@@ -26,6 +26,7 @@ h1 {
   padding-top: 1rem;
   padding-bottom: 0.2rem;
   margin-bottom: 1rem;
+  margin-top: 4rem;
 }
 
 h2,
@@ -38,4 +39,5 @@ h6 {
   padding-top: 1rem;
   padding-bottom: 0.2rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }

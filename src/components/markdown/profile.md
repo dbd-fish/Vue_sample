@@ -19,15 +19,15 @@ Postgres、DynamoDB、MySQL
 AWS、Azure(VMのみ)
 
 # 経歴
-工学系の大学卒業
-↓
-大学院を数か月で中退
-↓
-組み込み系SIerに就職
-↓
-Web系SESに就職
-↓
-フリーランス
+工学系の大学卒業<br>
+↓<br>
+大学院を数か月で中退<br>
+↓<br>
+組み込み系SIerに就職<br>
+↓<br>
+Web系SESに就職<br>
+↓<br>
+フリーランス<br>
 
 
 # 趣味

@@ -7,8 +7,8 @@
       </template>
       <template v-slot:prepend>
 
-        <v-btn :to="{ path: 'home' }">
-          私のブログ
+        <v-btn :to="{ path: 'home' }" style="text-transform: none">
+          dbd-fishのブログ
         </v-btn>
 
       </template>
@@ -24,7 +24,9 @@
     </v-app-bar>
     <v-main>
       <div class="md">
+        <!-- 本番用書き換え -->
         お問い合わせ
+        <p><a href="mailto:info&#64;example.com">info&#64;example.com</a></p>
       </div>
     </v-main>
     <v-main>
@@ -45,7 +47,7 @@ export default {
       tab: null,
       tab_list: [
         { tab_name: 'プロフィール', tab_path: 'profile' },
-        { tab_name: '経歴', tab_path: 'resume' },
+        { tab_name: '職務経歴', tab_path: 'resume' },
         { tab_name: `事業内容`, tab_path: 'service' },
         { tab_name: '仕事関連の記事', tab_path: 'job_article_list' },
         { tab_name: '趣味の記事', tab_path: 'private_article_list' },

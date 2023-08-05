@@ -7,8 +7,8 @@
       </template>
       <template v-slot:prepend>
 
-        <v-btn :to="{ path: 'home' }">
-          私のブログ
+        <v-btn :to="{ path: 'home' }" style="text-transform: none">
+          dbd-fishのブログ
         </v-btn>
 
       </template>
@@ -24,8 +24,56 @@
     </v-app-bar>
     <v-main>
       <div class="md">
-        プロフィール
-        <profile_md class="aaa" />
+        <h1>自己紹介</h1>
+        <img class="main_img" src="src\components\img\pforile.png" alt="自己紹介">
+        愛知県内在住のWebエンジニア兼IT講師。<br>
+        Webバックエンドがメインだが、画面を作ったり環境構築もできる。<br>
+        IT講師ではJavaなどを教えている。<br>
+
+        <h2>資格</h2>
+        <ul>
+          <li>AWS Certified Cloud Practitioner (CLF)</li>
+          <li>AWS Certified Solutions Architect – Associate</li>
+          <li>Python 3 エンジニア認定データ分析</li>
+        </ul>
+
+        <h2>アカウント</h2>
+        <ul>
+          <li><a href="https://github.com/dbd-fish" target="_blank">GitHub</a></li>
+          <li><a href="https://qiita.com/dbd_fish" target="_blank">Qiita</a></li>
+        </ul>
+
+        <h1>スキル</h1>
+        <h2>言語</h2>
+        PHP、Python、Java、HTML、CSS、JavaScript、C、ASMなど色々やってきました。
+        <h2>フレームワーク</h2>
+        Larave、Django、Vue.js、FastAPI
+
+        <h2>DB</h2>
+        Postgres、DynamoDB、MySQL
+        <h2>その他</h2>
+        AWS、Azure(VMのみ)
+
+        <h1>経歴</h1>
+        工学系の大学卒業<br>
+        ↓<br>
+        大学院を数か月で中退<br>
+        ↓<br>
+        組み込み系SIerに就職<br>
+        ↓<br>
+        Web系SESに就職<br>
+        ↓<br>
+        フリーランス<br>
+
+        職務経歴は
+        <router-link to="/resume">
+          こちら
+        </router-link>
+        をご覧ください。
+        <h1>趣味</h1>
+        魚を調理すること<br>
+        たまにゲームをすること<br>
+
       </div>
     </v-main>
     <v-main>
@@ -49,7 +97,7 @@ export default {
       tab: null,
       tab_list: [
         { tab_name: 'プロフィール', tab_path: 'profile' },
-        { tab_name: '経歴', tab_path: 'resume' },
+        { tab_name: '職務経歴', tab_path: 'resume' },
         { tab_name: `事業内容`, tab_path: 'service' },
         { tab_name: '仕事関連の記事', tab_path: 'job_article_list' },
         { tab_name: '趣味の記事', tab_path: 'private_article_list' },
@@ -62,6 +110,12 @@ export default {
 
 <style scoped>
 :deep(h1) {
-  background-color: rgb(55, 228, 228);
+  background-color: #cfffff;
+  padding-left: 1rem;
+}
+
+:deep(img.main_img) {
+  padding: 1rem;
+  width: 100%;
 }
 </style>

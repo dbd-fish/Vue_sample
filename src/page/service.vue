@@ -7,8 +7,8 @@
       </template>
       <template v-slot:prepend>
 
-        <v-btn :to="{ path: 'home' }">
-          私のブログ
+        <v-btn :to="{ path: 'home' }" style="text-transform: none">
+          dbd-fishのブログ
         </v-btn>
 
       </template>
@@ -24,7 +24,25 @@
     </v-app-bar>
     <v-main>
       <div class="md">
-        事業内容
+        <h1>事業内容</h1>
+        <h2>フリーランス業務(SES)</h2>
+        <ul>
+          <li>PHPやPythonなどを用いたweb系バックエンド開発</li>
+          <li>Javaなど用いたIT講師</li>
+          <li>プログラミングスクールのコーチ</li>
+        </ul>
+
+        <h2>プロダクト</h2>
+        <ul>
+          <li>本ブログ</li>
+        </ul>
+
+        <h2>その他</h2>
+        <ul>
+          <li>太陽光を用いたマイニング</li>
+          <li>本ブログのアフィリエイト</li>
+        </ul>
+
       </div>
     </v-main>
     <v-main>
@@ -45,7 +63,7 @@ export default {
       tab: null,
       tab_list: [
         { tab_name: 'プロフィール', tab_path: 'profile' },
-        { tab_name: '経歴', tab_path: 'resume' },
+        { tab_name: '職務経歴', tab_path: 'resume' },
         { tab_name: `事業内容`, tab_path: 'service' },
         { tab_name: '仕事関連の記事', tab_path: 'job_article_list' },
         { tab_name: '趣味の記事', tab_path: 'private_article_list' },
