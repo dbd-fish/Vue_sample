@@ -18,9 +18,9 @@ export const useStoreMain = defineStore('store_main', {
     resume_md,
     profile_card
   },
-  data() {
-    return {
-
-    }
-  },
+  actions: {
+    update_now_page(update_page) {
+      this.now_page=update_page;
+    },
+  }
 });
