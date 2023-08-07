@@ -1,7 +1,7 @@
 
 <template>
-  <v-layout>
-    <v-app-bar color="teal-darken-4" image="src\components\img\みしまおこぜ.jpg">
+  <v-layout class="rounded rounded-md">
+    <v-app-bar class="main_bar" color="teal-darken-4" image="https://picsum.photos/1920/1080?random">
       <template v-slot:image>
         <v-img gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"></v-img>
       </template>
@@ -22,11 +22,13 @@
         </v-btns>
       </template>
     </v-app-bar>
-    <v-navigation-drawer location="left">
+
+    <v-navigation-drawer>
       <v-list>
         <adsense_card />
       </v-list>
     </v-navigation-drawer>
+
     <v-navigation-drawer location="right">
       <v-list>
         <profile_card />
@@ -34,14 +36,10 @@
     </v-navigation-drawer>
     <v-main>
       <div class="md">
-        趣味関連の記事
+        仕事記事1
+        <private_article_test1 />
       </div>
-      <v-card v-for="private_article_card in StoreMain.private_article_card_list" :key="private_article_card.card_name"
-        :value="private_article_card.card_name" :to="{ name: private_article_card.card_path }" class="article_list">
-        {{ private_article_card.card_name }}
-      </v-card>
     </v-main>
-
   </v-layout>
 </template>
 
@@ -49,17 +47,28 @@
 import { useStoreMain } from '@/stores/store_main';
 
 const StoreMain = useStoreMain();
-StoreMain.update_now_page("趣味の記事");
+StoreMain.update_now_page("お問い合わせ");
 
 </script>
 
 <script>
 import profile_card from "@/components/profile_card.vue";
+import adsense_card from "@/components/adsense_card.vue";
+import private_article_test1 from "@/components/markdown/private_article_list/private_article_test1.md";
+
 
 export default {
   components: {
-    profile_card
+    profile_card,
+    adsense_card,
+    private_article_test1
   },
 }
-
 </script>
+
+<style>
+.V_main_style {
+  margin: 0rem;
+  padding: 10rem;
+}
+</style>

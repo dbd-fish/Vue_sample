@@ -37,6 +37,7 @@
     <v-main>
       <div class="md">
         仕事記事2
+        <job_article_test2 />
       </div>
     </v-main>
   </v-layout>
@@ -53,11 +54,13 @@ StoreMain.update_now_page("お問い合わせ");
 <script>
 import profile_card from "@/components/profile_card.vue";
 import adsense_card from "@/components/adsense_card.vue";
+import job_article_test2 from "@/components/markdown/job_article_list/job_article_test1.md";
 
 export default {
   components: {
     profile_card,
-    adsense_card
+    adsense_card,
+    job_article_test2
   },
 }
 </script>

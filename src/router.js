@@ -8,6 +8,8 @@ import service from '@/page/service.vue'
 import private_article_list from '@/page/private_article_list.vue'
 import job_article_test1 from '@/page/job_article_list/job_article_test1.vue'
 import job_article_test2 from '@/page/job_article_list/job_article_test2.vue'
+import private_article_test1 from '@/page/private_article_list/private_article_test1.vue'
+import private_article_test2 from '@/page/private_article_list/private_article_test2.vue'
 
 import job_article_list from '@/page/job_article_list.vue'
 
@@ -85,7 +87,19 @@ const routes = [
     meta: { title: '仕事関連の記事2' }
   },
 
+  {
+    path: '/private_article_list/private_article_test1',
+    name: 'private_article_test1',
+    component: private_article_test1,
+    meta: { title: '趣味関連の記事1' }
+  },
 
+  {
+    path: '/private_article_list/private_article_test2',
+    name: 'private_article_test2',
+    component: private_article_test2,
+    meta: { title: '趣味関連の記事2' }
+  },
 
 ]
 

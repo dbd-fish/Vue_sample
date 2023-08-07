@@ -1,7 +1,7 @@
 
 <template>
   <v-layout>
-    <v-app-bar color="teal-darken-4" image="https://picsum.photos/1920/1080?random">
+    <v-app-bar color="teal-darken-4" image="src\components\img\みしまおこぜ.jpg">
       <template v-slot:image>
         <v-img gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"></v-img>
       </template>
@@ -39,7 +39,6 @@
         <ul>
           <li>PHPやPythonなどを用いたweb系バックエンド開発</li>
           <li>Javaなど用いたIT講師</li>
-          <li>プログラミングスクールのコーチ</li>
         </ul>
 
         <h2>プロダクト</h2>
@@ -50,7 +49,7 @@
         <h2>その他</h2>
         <ul>
           <li>太陽光を用いたマイニング</li>
-          <li>本ブログのアフィリエイト</li>
+          <li>本ブログの広告収入（目標）</li>
         </ul>
 
       </div>

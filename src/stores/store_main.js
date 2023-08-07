@@ -17,6 +17,10 @@ export const useStoreMain = defineStore('store_main', {
       { card_name: '仕事関連記事_テスト1', card_path: 'job_article_test1' },
       { card_name: '仕事関連記事_テスト2', card_path: 'job_article_test2' },
     ],
+    private_article_card_list: [
+      { card_name: '趣味関連記事_テスト1', card_path: 'private_article_test1' },
+      { card_name: '趣味関連記事_テスト2', card_path: 'private_article_test2' },
+    ],
   }),
   components: {
     resume_md,
