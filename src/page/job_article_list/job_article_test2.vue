@@ -35,11 +35,8 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      パンくずリスト
       <div class="md">
-        <!-- 本番用書き換え -->
-        お問い合わせ
-        <p><a href="mailto:info&#64;example.com">info&#64;example.com</a></p>
+        仕事記事2
       </div>
     </v-main>
   </v-layout>

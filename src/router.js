@@ -6,7 +6,11 @@ import profile from '@/page/profile.vue'
 import request from '@/page/request.vue'
 import service from '@/page/service.vue'
 import private_article_list from '@/page/private_article_list.vue'
+import job_article_test1 from '@/page/job_article_list/job_article_test1.vue'
+import job_article_test2 from '@/page/job_article_list/job_article_test2.vue'
+
 import job_article_list from '@/page/job_article_list.vue'
+
 
 import test from '@/page/test.vue'
 
@@ -66,6 +70,22 @@ const routes = [
     component: test,
     meta: { title: 'テスト' }
   },
+
+  {
+    path: '/job_article_list/job_article_test1',
+    name: 'job_article_test1',
+    component: job_article_test1,
+    meta: { title: '仕事関連の記事1' }
+  },
+
+  {
+    path: '/job_article_list/job_article_test2',
+    name: 'job_article_test2',
+    component: job_article_test2,
+    meta: { title: '仕事関連の記事2' }
+  },
+
+
 
 ]
 

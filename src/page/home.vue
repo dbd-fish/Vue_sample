@@ -16,7 +16,7 @@
       <v-spacer></v-spacer>
       <template v-slot:extension>
         <v-btns v-model="tab" align-tabs="title">
-          <v-btn v-for="tab in StoreMain.tab_list" :key="tab.tab_name" :value="tab.tab_name" :to="{ path: tab.tab_path }">
+          <v-btn v-for="tab in StoreMain.tab_list" :key="tab.tab_name" :value="tab.tab_name" :to="{ name: tab.tab_path }">
             {{ tab.tab_name }}
           </v-btn>
         </v-btns>

@@ -1,6 +1,6 @@
 <template>
   <v-card class="profile_card" max-width="400" color="#f5f5f5">
-    <v-img class="mx-auto" height="150" width="150" id="card-img" src="src\components\img\pforile.png" cover>
+    <v-img class="mx-auto" height="150" width="150" id="card-img" src="..\src\components\img\pforile.png" cover>
     </v-img>
     <v-card-title>執筆者:dbd-fish</v-card-title>
     <v-card-text>

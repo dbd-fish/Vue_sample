@@ -7,7 +7,7 @@
       </template>
       <template v-slot:prepend>
 
-        <v-btn :to="{ path: 'home' }" style="text-transform: none">
+        <v-btn :to="{ name: 'job_article_test1' }" style="text-transform: none">
           dbd-fishのブログ
         </v-btn>
 
@@ -35,11 +35,9 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      パンくずリスト
       <div class="md">
-        <!-- 本番用書き換え -->
-        お問い合わせ
-        <p><a href="mailto:info&#64;example.com">info&#64;example.com</a></p>
+        仕事記事1
+        <job_article_test1 />
       </div>
     </v-main>
   </v-layout>
@@ -56,11 +54,14 @@ StoreMain.update_now_page("お問い合わせ");
 <script>
 import profile_card from "@/components/profile_card.vue";
 import adsense_card from "@/components/adsense_card.vue";
+import job_article_test1 from "@/components/markdown/job_article_list/job_article_test1.md";
+
 
 export default {
   components: {
     profile_card,
-    adsense_card
+    adsense_card,
+    job_article_test1
   },
 }
 </script>
