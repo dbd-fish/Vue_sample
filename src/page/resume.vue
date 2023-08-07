@@ -7,7 +7,7 @@
       </template>
       <template v-slot:prepend>
 
-        <v-btn :to="{ path: 'home' }" style="text-transform: none">
+        <v-btn :to="{ name: 'home' }" style="text-transform: none">
           dbd-fishのブログ
         </v-btn>
 
