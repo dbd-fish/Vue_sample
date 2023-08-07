@@ -22,15 +22,21 @@
         </v-btns>
       </template>
     </v-app-bar>
+    <v-navigation-drawer location="left">
+      <v-list>
+        <adsense_card />
+      </v-list>
+    </v-navigation-drawer>
+    <v-navigation-drawer location="right">
+      <v-list>
+        <profile_card />
+      </v-list>
+    </v-navigation-drawer>
     <v-main>
-      <div>
-        <resume_md class="md" />
+      <div class="md">
+        <resume_md />
       </div>
     </v-main>
-    <v-main>
-      <profile_card />
-    </v-main>
-
   </v-layout>
 </template>
 
@@ -45,11 +51,13 @@ StoreMain.update_now_page("職務経歴");
 <script>
 import resume_md from "@/components/markdown/resume.md";
 import profile_card from "@/components/profile_card.vue";
+import adsense_card from "@/components/adsense_card.vue";
 
 export default {
   components: {
     resume_md,
-    profile_card
+    profile_card,
+    adsense_card
   },
 }
 </script>

@@ -22,14 +22,22 @@
         </v-btns>
       </template>
     </v-app-bar>
+    <v-navigation-drawer location="left">
+      <v-list>
+        <adsense_card />
+      </v-list>
+    </v-navigation-drawer>
+    <v-navigation-drawer location="right">
+      <v-list>
+        <profile_card />
+      </v-list>
+    </v-navigation-drawer>
     <v-main>
       <div class="md">
         趣味関連の記事
       </div>
     </v-main>
-    <v-main>
-      <profile_card />
-    </v-main>
+
   </v-layout>
 </template>
 

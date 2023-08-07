@@ -12,7 +12,7 @@
         </v-btn>
 
       </template>
-      <v-app-bar-title>{{StoreMain.now_page}}</v-app-bar-title>
+      <v-app-bar-title>{{ StoreMain.now_page }}</v-app-bar-title>
       <v-spacer></v-spacer>
       <template v-slot:extension>
         <v-btns v-model="tab" align-tabs="title">
@@ -22,6 +22,16 @@
         </v-btns>
       </template>
     </v-app-bar>
+    <v-navigation-drawer location="left">
+      <v-list>
+        <adsense_card />
+      </v-list>
+    </v-navigation-drawer>
+    <v-navigation-drawer location="right">
+      <v-list>
+        <profile_card />
+      </v-list>
+    </v-navigation-drawer>
     <v-main>
       <div class="md">
         <h1>自己紹介</h1>
@@ -76,9 +86,7 @@
 
       </div>
     </v-main>
-    <v-main>
-      <profile_card />
-    </v-main>
+
   </v-layout>
 </template>
 
