@@ -12,7 +12,7 @@
         </v-btn>
 
       </template>
-      <v-app-bar-title>{{StoreMain.now_page}}</v-app-bar-title>
+      <v-app-bar-title>{{ StoreMain.now_page }}</v-app-bar-title>
       <v-spacer></v-spacer>
       <template v-slot:extension>
         <v-btns v-model="tab" align-tabs="title">
@@ -29,9 +29,6 @@
     </v-main>
     <v-main>
       <profile_card />
-      <v-card max-width="400" color="#f5f5f5">
-        <v-card-title>test</v-card-title>
-      </v-card>
     </v-main>
 
   </v-layout>

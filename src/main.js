@@ -6,12 +6,19 @@ import App from '@/App.vue'
 import router from '@/router'
 import vuetify from "./vuetify";
 
+import VueAdsense from 'vue-adsense';
+
+
 const pinia = createPinia()
 
 const app = createApp(App)
 app.use(router)
 app.use(vuetify)
 app.use(pinia)
+
+app.component('adsense', VueAdsense)
+
+
 app.mount('#app')
 
 const DEFAULT_TITLE = 'Some Default Title';

@@ -22,7 +22,9 @@
         </v-btns>
       </template>
     </v-app-bar>
-
+    <v-main>
+      <adsense_card />
+    </v-main>
     <v-main>
       パンくずリスト
       <div class="md">
@@ -47,10 +49,12 @@ StoreMain.update_now_page("お問い合わせ");
 
 <script>
 import profile_card from "@/components/profile_card.vue";
+import adsense_card from "@/components/adsense_card.vue";
 
 export default {
   components: {
-    profile_card
+    profile_card,
+    adsense_card
   },
 }
 </script>

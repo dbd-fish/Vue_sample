@@ -28,6 +28,7 @@
 
 .profile_card {
   /* padding: 1rem; */
+  margin-right: 1rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
   margin-top: none;
