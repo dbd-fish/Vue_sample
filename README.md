@@ -1,3 +1,21 @@
+# プロダクトについて
+ブログのプロトタイプを作成しました。
+プロフィールや職務経歴書などが閲覧できます。
+将来的にはGoogle Adsenseの導入、記事の執筆などができるようにして、
+ブログとして運営できるようにします。
+
+本プロダクトの詳細について、
+詳細はQiita記事などでまとめる予定です。
+
+導入したライブラリやフレームワークについては下記の通りです。
+* Vue3
+* Vue Router3
+* Vuetify3
+* pinia
+
+
+以下、デフォルトのREADMEです。
+
 # homepate_vue
 
 This template should help get you started developing with Vue 3 in Vite.
