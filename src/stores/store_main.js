@@ -13,6 +13,10 @@ export const useStoreMain = defineStore('store_main', {
       { tab_name: '趣味の記事', tab_path: 'private_article_list' },
       { tab_name: 'お問い合わせ', tab_path: 'request' },
     ],
+    job_article_card_list: [
+      { card_name: '仕事関連記事_テスト1', card_path: 'job_article_test1' },
+      { card_name: '仕事関連記事_テスト2', card_path: 'job_article_test2' },
+    ],
   }),
   components: {
     resume_md,
@@ -20,7 +24,8 @@ export const useStoreMain = defineStore('store_main', {
   },
   actions: {
     update_now_page(update_page) {
-      this.now_page=update_page;
+      this.now_page = update_page;
     },
   }
 });
+

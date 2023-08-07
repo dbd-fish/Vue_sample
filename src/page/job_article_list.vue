@@ -36,6 +36,10 @@
       <div class="md">
         仕事関連の記事
       </div>
+      <v-card v-for="job_article_card in StoreMain.job_article_card_list" :key="job_article_card.card_name"
+        :value="job_article_card.card_name" :to="{ name: job_article_card.card_path }" class="article_list">
+        {{ job_article_card.card_name }}
+      </v-card>
     </v-main>
   </v-layout>
 </template>
@@ -57,3 +61,12 @@ export default {
 }
 
 </script>
+
+<style>
+.article_list {
+  width: 500px;
+  height: 300px;
+  margin: 2rem;
+  background-color: #f5f5f5;
+}
+</style>
