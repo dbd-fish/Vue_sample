@@ -10,6 +10,7 @@ import job_article_test1 from '@/page/job_article_list/job_article_test1.vue'
 import job_article_test2 from '@/page/job_article_list/job_article_test2.vue'
 import private_article_test1 from '@/page/private_article_list/private_article_test1.vue'
 import private_article_test2 from '@/page/private_article_list/private_article_test2.vue'
+import error_page from '@/page/error_page.vue'
 
 import job_article_list from '@/page/job_article_list.vue'
 
@@ -100,6 +101,14 @@ const routes = [
     component: private_article_test2,
     meta: { title: '趣味関連の記事2' }
   },
+
+
+  {
+    path: '/:catchAll(.*)',
+    name: 'error_page',
+    component: error_page,
+  }
+
 
 ]
 
