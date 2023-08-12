@@ -1,6 +1,6 @@
 
 <template>
-  <v-layout class="rounded rounded-md">
+  <v-app class="rounded rounded-md">
     <v-app-bar class="main_bar" color="teal-darken-4" image="https://picsum.photos/1920/1080?random">
       <template v-slot:image>
         <v-img gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"></v-img>
@@ -40,7 +40,7 @@
         <private_article_test2 />
       </div>
     </v-main>
-  </v-layout>
+  </v-app>
 </template>
 
 <script setup>

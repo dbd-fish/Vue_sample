@@ -9,7 +9,7 @@
     </v-card-text>
 
     <v-card-actions>
-      <v-btn color="orange" :to="{ path: 'profile' }">
+      <v-btn color="orange" :to="{ name: 'profile' }">
         プロフィール詳細
       </v-btn>
 

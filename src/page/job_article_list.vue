@@ -1,6 +1,6 @@
 
 <template>
-  <v-layout>
+  <v-app>
     <v-app-bar color="teal-darken-4" image="src\components\img\みしまおこぜ.jpg">
       <template v-slot:image>
         <v-img gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"></v-img>
@@ -41,7 +41,7 @@
         {{ job_article_card.card_name }}
       </v-card>
     </v-main>
-  </v-layout>
+  </v-app>
 </template>
 
 <script setup>
@@ -53,10 +53,12 @@ StoreMain.update_now_page("仕事関連の記事");
 </script>
 <script>
 import profile_card from "@/components/profile_card.vue";
+import adsense_card from "@/components/adsense_card.vue";
 
 export default {
   components: {
-    profile_card
+    profile_card,
+    adsense_card,
   },
 }
 
