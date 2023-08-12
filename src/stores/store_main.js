@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia';
-import resume_md from "@/components/markdown/resume.md";
-import profile_card from "@/components/profile_card.vue";
+
 
 export const useStoreMain = defineStore('store_main', {
   state: () => ({
@@ -22,10 +21,6 @@ export const useStoreMain = defineStore('store_main', {
       { card_name: '趣味関連記事_テスト2', card_path: 'private_article_test2' },
     ],
   }),
-  components: {
-    resume_md,
-    profile_card
-  },
   actions: {
     update_now_page(update_page) {
       this.now_page = update_page;
