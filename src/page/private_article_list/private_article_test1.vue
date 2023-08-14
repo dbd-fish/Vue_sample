@@ -29,17 +29,24 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-navigation-drawer location="right">
+    <v-navigation-drawer location="right" absolute>
       <v-list>
         <profile_card />
       </v-list>
     </v-navigation-drawer>
     <v-main>
+      <v-navigation-drawer location="left" absolute>
+        <adsense_card />
+      </v-navigation-drawer>
+      <v-navigation-drawer location="right" absolute>
+        <profile_card />
+      </v-navigation-drawer>
       <div class="md">
         仕事記事1
         <private_article_test1 />
       </div>
     </v-main>
+    <com_footer />
   </v-app>
 </template>
 
@@ -54,6 +61,7 @@ StoreMain.update_now_page("お問い合わせ");
 <script>
 import profile_card from "@/components/profile_card.vue";
 import adsense_card from "@/components/adsense_card.vue";
+import com_footer from "@/components/com_footer.vue";
 import private_article_test1 from "@/components/markdown/private_article_list/private_article_test1.md";
 
 
@@ -61,7 +69,7 @@ export default {
   components: {
     profile_card,
     adsense_card,
-    private_article_test1
+    com_footer, private_article_test1
   },
 }
 </script>

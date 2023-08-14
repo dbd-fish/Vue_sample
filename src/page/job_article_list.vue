@@ -22,17 +22,13 @@
         </v-btns>
       </template>
     </v-app-bar>
-    <v-navigation-drawer location="left">
-      <v-list>
-        <adsense_card />
-      </v-list>
-    </v-navigation-drawer>
-    <v-navigation-drawer location="right">
-      <v-list>
-        <profile_card />
-      </v-list>
-    </v-navigation-drawer>
     <v-main>
+      <v-navigation-drawer location="left" absolute>
+        <adsense_card />
+      </v-navigation-drawer>
+      <v-navigation-drawer location="right" absolute>
+        <profile_card />
+      </v-navigation-drawer>
       <div class="md">
         仕事関連の記事
       </div>
@@ -41,6 +37,7 @@
         {{ job_article_card.card_name }}
       </v-card>
     </v-main>
+    <com_footer />
   </v-app>
 </template>
 
@@ -54,11 +51,13 @@ StoreMain.update_now_page("仕事関連の記事");
 <script>
 import profile_card from "@/components/profile_card.vue";
 import adsense_card from "@/components/adsense_card.vue";
+import com_footer from "@/components/com_footer.vue";
 
 export default {
   components: {
     profile_card,
     adsense_card,
+    com_footer,
   },
 }
 

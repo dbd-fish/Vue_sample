@@ -22,17 +22,13 @@
         </v-btns>
       </template>
     </v-app-bar>
-    <v-navigation-drawer location="left">
-      <v-list>
-        <adsense_card />
-      </v-list>
-    </v-navigation-drawer>
-    <v-navigation-drawer location="right">
-      <v-list>
-        <profile_card />
-      </v-list>
-    </v-navigation-drawer>
     <v-main>
+      <v-navigation-drawer location="left" absolute>
+        <adsense_card />
+      </v-navigation-drawer>
+      <v-navigation-drawer location="right" absolute>
+        <profile_card />
+      </v-navigation-drawer>
       <div class="md">
         <h1>自己紹介</h1>
         <img class="main_img" src="src\components\img\pforile.png" alt="自己紹介">
@@ -86,6 +82,7 @@
 
       </div>
     </v-main>
+    <com_footer />
   </v-app>
 </template>
 
@@ -101,12 +98,14 @@ StoreMain.update_now_page("プロフィール");
 import profile_card from "@/components/profile_card.vue";
 import profile_md from "@/components/markdown/profile.md";
 import adsense_card from "@/components/adsense_card.vue";
+import com_footer from "@/components/com_footer.vue";
 
 export default {
   components: {
     profile_card,
     profile_md,
     adsense_card,
+    com_footer,
   },
 }
 </script>

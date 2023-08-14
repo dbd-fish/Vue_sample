@@ -6,16 +6,16 @@
         Application
       </v-app-bar-title>
     </v-app-bar>
-    <v-navigation-drawer location="left">
+    <!-- <v-navigation-drawer location="left" absolute>
       <v-list>
         <adsense_card />
       </v-list>
     </v-navigation-drawer>
-    <v-navigation-drawer location="right">
+    <v-navigation-drawer location="right" absolute>
       <v-list>
         <profile_card />
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
     <v-main heidht="50em">
       <v-container>
         <v-sheet min-height="20em">
@@ -26,19 +26,21 @@
         </v-sheet>
       </v-container>
     </v-main>
-
-    <v-footer dark color="teal-lighten-2" class="com_fotter" height="50px" min-width="10000px">
+    <com_footer />
+    <v-footer dark color="teal-lighten-2" class="com_fotter" height="50px" padless>
       <!-- <div class="flex-grow-1"></div> -->
       <div>&copy; 2023 - {{ new Date().getFullYear() }} dbd-fishのブログ</div>
     </v-footer>
+
   </v-app>
+  <footer>aaa</footer>
 </template>
 
 <script>
 import resume_md from "@/components/markdown/resume.md";
 import profile_card from "@/components/profile_card.vue";
 import adsense_card from "@/components/adsense_card.vue";
-import com_footer from "@/components/footer.vue";
+import com_footer from "@/components/com_footer.vue";
 
 
 export default {
@@ -46,7 +48,7 @@ export default {
     resume_md,
     profile_card,
     adsense_card,
-    com_footer,
+    com_footer, com_footer,
   },
 }
 </script>
@@ -57,17 +59,19 @@ export default {
 }
 
 footer {
-  padding: 0;
   background-color: black;
+  min-width: 100000px;
+  position: absolute;
+  bottom: 0;
+
 }
 
-.main {
-  color: black;
-  background-color: black;
-  width: 10000000000000px;
-  padding: -10000px;
-  margin: 0px;
+width: 960px;
+margin: 0 auto;
 
+.main {
+  color: red;
+  background-color: blue;
 }
 </style>
 
