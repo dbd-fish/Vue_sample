@@ -23,17 +23,6 @@
       </template>
     </v-app-bar>
 
-    <v-navigation-drawer>
-      <v-list>
-        <adsense_card />
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-navigation-drawer location="right" absolute>
-      <v-list>
-        <profile_card />
-      </v-list>
-    </v-navigation-drawer>
     <v-main>
       <v-navigation-drawer location="left" absolute>
         <adsense_card />
