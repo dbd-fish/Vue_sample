@@ -23,17 +23,6 @@
       </template>
     </v-app-bar>
 
-    <v-navigation-drawer>
-      <v-list>
-        <adsense_card />
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-navigation-drawer location="right" absolute>
-      <v-list>
-        <profile_card />
-      </v-list>
-    </v-navigation-drawer>
     <v-main>
       <v-navigation-drawer location="left" absolute>
         <adsense_card />
@@ -54,7 +43,7 @@
 import { useStoreMain } from '@/stores/store_main';
 
 const StoreMain = useStoreMain();
-StoreMain.update_now_page("お問い合わせ");
+StoreMain.update_now_page("趣味関連の記事");
 
 </script>
 
