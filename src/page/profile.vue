@@ -32,10 +32,11 @@
       <div class="md">
         <h1>自己紹介</h1>
         <img class="main_img" src="src\components\img\pforile.png" alt="自己紹介">
-        愛知県内在住のWebエンジニア兼IT講師。<br>
-        Webバックエンドがメインだが、画面を作ったり環境構築もできる。<br>
-        IT講師ではJavaなどを教えている。<br>
-
+        <p>
+          愛知県内在住のWebエンジニア兼IT講師。<br>
+          Webバックエンドがメインだが、画面を作ったり環境構築もできる。<br>
+          IT講師ではJavaなどを教えている。<br>
+        </p>
         <h2>資格</h2>
         <ul>
           <li>AWS Certified Cloud Practitioner (CLF)</li>
@@ -70,7 +71,7 @@
         Web系SESに就職<br>
         ↓<br>
         フリーランス<br>
-
+        <br>
         職務経歴は
         <router-link to="/resume">
           こちら
@@ -111,13 +112,8 @@ export default {
 </script>
 
 <style scoped>
-:deep(h1) {
-  background-color: #cfffff;
-  padding-left: 1rem;
-}
-
 :deep(img.main_img) {
   padding: 1rem;
-  width: 100%;
+  width: 80%;
 }
 </style>
