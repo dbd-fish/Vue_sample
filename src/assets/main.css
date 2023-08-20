@@ -45,6 +45,19 @@ div.md {
   margin-top: 2rem;
 }
 
+.article_title {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+#articl_tag {
+  padding-right: 1rem;
+  margin-right: 10px;
+  text-transform: none;
+  border: #202020;
+  border: 1px solid #202020
+}
+
 @media screen and (max-width: 767px) {
   img.md {
     width: 500px;

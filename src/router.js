@@ -78,30 +78,49 @@ const routes = [
     path: '/job_article_list/job_article_test1',
     name: 'job_article_test1',
     component: job_article_test1,
-    meta: { title: '仕事関連の記事1' }
+    meta: {
+      title: '仕事関連の記事1',
+      tags: ['PHP', 'Laravel'],
+      create_date: "2023/01/01",
+      update_date: "2023/02/02",
+    }
   },
 
   {
     path: '/job_article_list/job_article_test2',
     name: 'job_article_test2',
     component: job_article_test2,
-    meta: { title: '仕事関連の記事2' }
+    meta: {
+      title: '仕事関連の記事2',
+      tags: ['Python', 'Django'],
+      create_date: "2023/02/01",
+      update_date: "2023/03/02",
+    }
   },
 
   {
     path: '/private_article_list/private_article_test1',
     name: 'private_article_test1',
     component: private_article_test1,
-    meta: { title: '趣味関連の記事1' }
+    meta: {
+      title: '趣味関連の記事1',
+      tags: ['ゲーム', 'アニメ'],
+      create_date: "2022/02/01",
+      update_date: "2022/03/02",
+    }
   },
 
   {
     path: '/private_article_list/private_article_test2',
     name: 'private_article_test2',
     component: private_article_test2,
-    meta: { title: '趣味関連の記事2' }
+    meta: {
+      title: '趣味関連の記事2',
+      tags: ['魚', '料理'],
+      create_date: "2022/02/01",
+      update_date: "2022/03/02",
+    }
   },
-
 
   {
     path: '/:catchAll(.*)',

@@ -1,7 +1,7 @@
 
 <template>
   <v-app class="rounded rounded-md">
-    <v-app-bar class="main_bar" color="teal-darken-4" image="https://picsum.photos/1920/1080?random">
+    <v-app-bar color="teal-darken-4" image="..\src\components\img\みしまおこぜ.jpg">
       <template v-slot:image>
         <v-img gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"></v-img>
       </template>
@@ -31,8 +31,20 @@
         <profile_card />
       </v-navigation-drawer>
       <div class="md">
-        仕事記事2
-        <private_article_test2 />
+        <section class="md_header">
+          <p class="article_title">{{ article_title }}</p>
+          <p>記事作成日 {{ create_date }}</p>
+          <p>記事更新日 {{ update_date }}</p>
+          <br>
+          <p>タグ：
+            <v-btn v-for="tag in tags" :key="tag" id="articl_tag">
+              {{ tag }}
+            </v-btn>
+          </p>
+        </section>
+        <section>
+          <private_article_test2 />
+        </section>
       </div>
     </v-main>
     <com_footer />
@@ -41,6 +53,14 @@
 
 <script setup>
 import { useStoreMain } from '@/stores/store_main';
+import { useRoute } from "vue-router";
+
+
+const router = useRoute()
+const article_title = router.meta.title
+const create_date = router.meta.create_date
+const update_date = router.meta.update_date
+const tags = router.meta.tags
 
 const StoreMain = useStoreMain();
 StoreMain.update_now_page("趣味関連の記事");
