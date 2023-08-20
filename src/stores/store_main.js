@@ -9,7 +9,7 @@ export const useStoreMain = defineStore('store_main', {
       { tab_name: '職務経歴', tab_path: 'resume' },
       { tab_name: `事業内容`, tab_path: 'service' },
       { tab_name: '仕事関連の記事', tab_path: 'job_article_list' },
-      { tab_name: '趣味の記事', tab_path: 'private_article_list' },
+      { tab_name: '趣味関連の記事', tab_path: 'private_article_list' },
       { tab_name: 'お問い合わせ', tab_path: 'request' },
     ],
     job_article_card_list: [

@@ -43,7 +43,7 @@
 import { useStoreMain } from '@/stores/store_main';
 
 const StoreMain = useStoreMain();
-StoreMain.update_now_page("お問い合わせ");
+StoreMain.update_now_page("趣味関連の記事");
 
 </script>
 

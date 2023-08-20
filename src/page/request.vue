@@ -32,7 +32,7 @@
       <div class="md">
         <!-- 本番用書き換え -->
         お問い合わせ
-        <p><a href="mailto:info&#64;example.com">info&#64;example.com</a></p>
+        <p>dbd.fish0805@gmail.com</p>
       </div>
     </v-main>
     <com_footer />
