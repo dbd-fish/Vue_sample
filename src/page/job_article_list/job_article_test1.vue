@@ -1,6 +1,6 @@
 
 <template>
-  <v-app class="rounded rounded-md">
+  <v-app >
     <v-app-bar color="teal-darken-4" image="..\src\components\img\みしまおこぜ.jpg">
       <template v-slot:image>
         <v-img gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"></v-img>
@@ -24,25 +24,24 @@
     </v-app-bar>
 
     <v-main>
-      <v-navigation-drawer location="left" absolute>
+      <v-navigation-drawer location="left">
         <adsense_card />
       </v-navigation-drawer>
-      <v-navigation-drawer location="right" absolute>
+      <v-navigation-drawer location="right">
         <profile_card />
       </v-navigation-drawer>
-
+      <section class="md_header">
+        <p class="article_title">{{ article_title }}</p>
+        <p>記事作成日 {{ create_date }}</p>
+        <p>記事更新日 {{ update_date }}</p>
+        <br>
+        <p>タグ：
+          <v-btn v-for="tag in tags" :key="tag" id="articl_tag">
+            {{ tag }}
+          </v-btn>
+        </p>
+      </section>
       <div class="md">
-        <section class="md_header">
-          <p class="article_title">{{ article_title }}</p>
-          <p>記事作成日 {{ create_date }}</p>
-          <p>記事更新日 {{ update_date }}</p>
-          <br>
-          <p>タグ：
-            <v-btn v-for="tag in tags" :key="tag" id="articl_tag">
-              {{ tag }}
-            </v-btn>
-          </p>
-        </section>
         <section>
           <job_article_test1 />
         </section>

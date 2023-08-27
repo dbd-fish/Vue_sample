@@ -29,6 +29,7 @@
       <v-navigation-drawer location="right" absolute>
         <profile_card />
       </v-navigation-drawer>
+      <p class="article_title">dbd-fishの職務経歴</p>
       <div class="md">
         <resume_md />
       </div>
