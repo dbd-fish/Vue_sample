@@ -1,90 +1,65 @@
-
 <template>
-  <v-app class="main">
-    <v-app-bar color="primary">
-      <v-app-bar-title>
-        Application
-      </v-app-bar-title>
-    </v-app-bar>
-    <!-- <v-navigation-drawer location="left" absolute>
-      <v-list>
-        <adsense_card />
-      </v-list>
-    </v-navigation-drawer>
-    <v-navigation-drawer location="right" absolute>
-      <v-list>
-        <profile_card />
-      </v-list>
-    </v-navigation-drawer> -->
-    <v-main heidht="50em">
-      <v-container>
-        <v-sheet min-height="20em">
-          Main Contents
-          <br>
-          <br>
-          <br><br>v<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </v-sheet>
-      </v-container>
-    </v-main>
-    <com_footer />
-    <v-footer dark color="teal-lighten-2" class="com_fotter" height="50px" padless>
-      <!-- <div class="flex-grow-1"></div> -->
-      <div>&copy; 2023 - {{ new Date().getFullYear() }} dbd-fishのブログ</div>
-    </v-footer>
+  <v-app app>
+    <v-app-bar app>
+      <v-app-bar-nav-icon @click="drawer = true" class="d-flex d-sm-none"></v-app-bar-nav-icon>
+      <v-toolbar-title>Your Dashboard</v-toolbar-title>
+      <v-spacer></v-spacer>
 
+      <template v-slot:extension>
+        <v-tabs v-model="tab" align-with-title class="d-none d-sm-flex">
+
+          <v-btns v-model="tab" align-tabs="title">
+            <v-btn v-for="tab in StoreMain.tab_list" :key="tab.tab_name" :value="tab.tab_name"
+              :to="{ name: tab.tab_path }">
+              {{ tab.tab_name }}
+            </v-btn>
+          </v-btns>
+        </v-tabs>
+      </template>
+    </v-app-bar>
+    <!-- Add a navigation bar -->
+    <v-navigation-drawer v-model="drawer" fix temporary>
+      <v-btns v-model="tab" align-tabs="title">
+        <v-list v-for="tab in StoreMain.tab_list" :key="tab.tab_name" :value="tab.tab_name" :to="{ name: tab.tab_path }">
+          {{ tab.tab_name }}
+        </v-list>
+      </v-btns>
+    </v-navigation-drawer>
+    <!-- Navigation bar ends -->
+    <v-content class="ma-5">
+      <v-tabs-items v-model="tab" class="d-flex flex-column align-center">
+        <v-tab-item v-for="item in items" :key="item">
+          You are on {{ item }}
+        </v-tab-item>
+      </v-tabs-items>
+    </v-content>
   </v-app>
-  <footer>aaa</footer>
 </template>
 
-<script>
-import resume_md from "@/components/markdown/resume.md";
-import profile_card from "@/components/profile_card.vue";
-import adsense_card from "@/components/adsense_card.vue";
-import com_footer from "@/components/com_footer.vue";
+
+<script setup>
+import { useStoreMain } from '@/stores/store_main';
+import { useRoute } from "vue-router";
 
 
-export default {
-  components: {
-    resume_md,
-    profile_card,
-    adsense_card,
-    com_footer, com_footer,
-  },
-}
+const router = useRoute()
+const article_title = router.meta.title
+const create_date = router.meta.create_date
+const update_date = router.meta.update_date
+const tags = router.meta.tags
+
+const StoreMain = useStoreMain();
+StoreMain.update_now_page("仕事関連の記事");
+
 </script>
 
-<style scoped>
-:deep(.md) {
-  color: red;
+<script>
+export default {
+  data() {
+    return {
+      drawer: false,
+      tab: null,
+    }
+  }
 }
-
-footer {
-  background-color: black;
-  min-width: 100000px;
-  position: absolute;
-  bottom: 0;
-
-}
-
-width: 960px;
-margin: 0 auto;
-
-.main {
-  color: red;
-  background-color: blue;
-}
-</style>
-
-
-<style >
-/* table,
-td,
-th {
-  border: 2px #000000 solid;
-  border-collapse: collapse;
-}
-
-ul {
-  padding-left: 20px;
-} */
-</style>
+</script>
