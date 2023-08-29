@@ -29,7 +29,7 @@
       <v-navigation-drawer location="right" absolute>
         <profile_card />
       </v-navigation-drawer>
-      <div class="md">
+      <div id="md">
         <h1>自己紹介</h1>
         <img class="main_img" src="src\components\img\pforile.png" alt="自己紹介">
         <p>

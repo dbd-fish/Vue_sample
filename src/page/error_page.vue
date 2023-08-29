@@ -27,7 +27,7 @@
       <v-navigation-drawer location="right" absolute>
         <profile_card />
       </v-navigation-drawer>
-      <div class="md">
+      <div id="md">
         お探しのページは見つかりませんでした。
       </div>
     </v-main>

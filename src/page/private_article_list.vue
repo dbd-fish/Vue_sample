@@ -29,7 +29,7 @@
       <v-navigation-drawer location="right" absolute>
         <profile_card />
       </v-navigation-drawer>
-      <div class="md">
+      <div id="md">
         趣味関連の記事
       </div>
       <v-card v-for="private_article_card in StoreMain.private_article_card_list" :key="private_article_card.card_name"

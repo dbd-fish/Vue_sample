@@ -29,7 +29,7 @@
     </v-app-bar>
 
 
-    <v-main center>
+    <v-main>
       <v-navigation-drawer v-model="drawer" absolute temporary>
         <v-list-item v-for="tab in StoreMain.tab_list" :key="tab.tab_name" :value="tab.tab_name"
           :to="{ name: tab.tab_path }">
@@ -41,10 +41,9 @@
       </v-navigation-drawer>
       <v-navigation-drawer location="right">
         <profile_card />
-      </v-navigation-drawer> -->
-      <v-contenie class="d-flex justify-center">
+      </v-navigation-drawer>  -->
 
-        
+      <v-container class="main_container">
         <section class="md_header">
           <p class="article_title">{{ article_title }}</p>
           <p>記事作成日 {{ create_date }}</p>
@@ -56,12 +55,32 @@
             </v-btn>
           </p>
         </section>
-        <div class="md">
-          <section>
+
+        <section>
+          <div id="md">
             <job_article_test1 />
-          </section>
-        </div>
-      </v-contenie>
+          </div>
+        </section>
+      </v-container>
+      <v-container class="side_container">
+        <p>vvvvvvvvvv</p>
+      </v-container>
+      <!-- <v-row  justify="center" align-content="center">
+        <v-col>
+          <v-container class="main_container">
+            <p>vvvvvvvvvv</p>
+          </v-container>
+        </v-col>
+
+        <v-col>
+          <v-container class="side_container">
+            <p>aaaaaaaaa</p>
+          </v-container>
+        </v-col>
+      </v-row> -->
+
+
+
 
     </v-main>
     <com_footer />

@@ -29,7 +29,7 @@
       <v-navigation-drawer location="right" absolute>
         <profile_card />
       </v-navigation-drawer>
-      <div class="md">
+      <div id="md">
         仕事関連の記事
       </div>
       <v-card v-for="job_article_card in StoreMain.job_article_card_list" :key="job_article_card.card_name"

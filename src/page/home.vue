@@ -29,7 +29,7 @@
       <v-navigation-drawer location="right" absolute>
         <profile_card />
       </v-navigation-drawer>
-      <div class="md">
+      <div id="md">
         ホーム
       </div>
     </v-main>

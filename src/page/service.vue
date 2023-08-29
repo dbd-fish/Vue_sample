@@ -29,7 +29,7 @@
       <v-navigation-drawer location="right" absolute>
         <profile_card />
       </v-navigation-drawer>
-      <div class="md">
+      <div id="md">
         <h1>事業内容</h1>
         <h2>フリーランス業務(SES)</h2>
         <ul>

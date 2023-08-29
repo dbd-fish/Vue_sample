@@ -29,7 +29,7 @@
       <v-navigation-drawer location="right" absolute>
         <profile_card />
       </v-navigation-drawer>
-      <div class="md">
+      <div id="md">
         <!-- 本番用書き換え -->
         お問い合わせ
         <p>dbd.fish0805@gmail.com</p>

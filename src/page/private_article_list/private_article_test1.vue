@@ -30,7 +30,7 @@
       <v-navigation-drawer location="right" absolute>
         <profile_card />
       </v-navigation-drawer>
-      <div class="md">
+      <div id="md">
         <section class="md_header">
           <p class="article_title">{{ article_title }}</p>
           <p>記事作成日 {{ create_date }}</p>
