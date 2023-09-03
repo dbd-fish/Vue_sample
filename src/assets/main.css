@@ -7,7 +7,6 @@
 }
 
 #md {
-  /* background-color: #ffffff; */
   background-color: #f5f5f5;
   line-height: 1.5;
   padding: 2rem;
@@ -20,37 +19,35 @@
 .v-main {
   z-index: 1;
   margin-top: 2rem;
-  /* max-width: 100px;
-  width: 600px; */
-  background-color: red;
-  /* margin-left: 50%;
-  margin-right: 100px; */
   justify-content: center;
-  /* margin-left: 500px;
-  margin-right: 500px; */
+
   width: auto;
 }
 
 .v-container {}
 
-.main_container {
-  background-color: blue;
+.main_col {
+  background-color: white;
   width: auto;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
-.side_container {
-  background-color: orange;
-  max-width: 10px;
+.side_col {
+  background-color: white;
+  padding: 0px;
 }
 
 .v-row {
   background-color: white;
-  width: 500px;
+  width: auto;
+  padding: 0px;
 }
+
+.v-col {}
 
 .v-footer {
   padding-top: 10rem;
-  background-color: black;
   min-width: auto;
   max-height: 50px;
   bottom: 0;

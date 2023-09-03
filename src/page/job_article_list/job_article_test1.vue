@@ -43,7 +43,7 @@
         <profile_card />
       </v-navigation-drawer>  -->
 
-      <v-container class="main_container">
+      <!-- <v-container class="main_container">
         <section class="md_header">
           <p class="article_title">{{ article_title }}</p>
           <p>記事作成日 {{ create_date }}</p>
@@ -64,21 +64,36 @@
       </v-container>
       <v-container class="side_container">
         <p>vvvvvvvvvv</p>
-      </v-container>
-      <!-- <v-row  justify="center" align-content="center">
-        <v-col>
-          <v-container class="main_container">
-            <p>vvvvvvvvvv</p>
-          </v-container>
+      </v-container> -->
+      <v-row justify="center" align-content-sm="center">
+        <v-col cols="12" sm="12" md="2" lg="2" xl="2" class="side_col">
+          <adsense_card />
+        </v-col>
+        <v-col cols="12" sm="12" md="6" lg="6" xl="6" align-self="center" class="main_col">
+          <div class="main_container">
+            <section class="md_header">
+              <p class="article_title">{{ article_title }}</p>
+              <p>記事作成日 {{ create_date }}</p>
+              <p>記事更新日 {{ update_date }}</p>
+              <br>
+              <p>タグ：
+                <v-btn v-for="tag in tags" :key="tag" id="articl_tag">
+                  {{ tag }}
+                </v-btn>
+              </p>
+            </section>
+            <section>
+              <div id="md">
+                <job_article_test1 />
+              </div>
+            </section>
+          </div>
         </v-col>
 
-        <v-col>
-          <v-container class="side_container">
-            <p>aaaaaaaaa</p>
-          </v-container>
+        <v-col cols="12" sm="12" md="2" lg="2" xl="2" class="side_col">
+          <profile_card />
         </v-col>
-      </v-row> -->
-
+      </v-row>
 
 
 
