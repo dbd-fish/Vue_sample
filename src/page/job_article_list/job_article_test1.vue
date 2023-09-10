@@ -6,7 +6,7 @@
       <com_navigation />
       <v-row justify="center" align-content-sm="center">
         <v-col cols="12" sm="12" md="12" lg="6" xl="6" id="main_col" class="justify-center align-start">
-          <com_article :article_title=article_title />
+          <com_article :articl_info=articl_info />
         </v-col>
 
         <v-col cols="12" sm="12" md="12" lg="2" xl="2" id="side_col" class="justify-center align-start">

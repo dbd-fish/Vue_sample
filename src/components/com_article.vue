@@ -1,12 +1,12 @@
 <template>
   <div class="main_container">
     <section class="md_header">
-      <p class="article_title">{{ article_title }}</p>
-      <p>記事作成日 {{ create_date }}</p>
-      <p>記事更新日 {{ update_date }}</p>
+      <p class="article_title">{{ articl_info['article_title'] }}</p>
+      <p>記事作成日 {{ articl_info['create_date'] }}</p>
+      <p>記事更新日 {{ articl_info['update_date'] }}</p>
       <br>
       <p>タグ：
-        <v-btn v-for="tag in tags" :key="tag" id="articl_tag">
+        <v-btn v-for="tag in articl_info['tags']" :key="tag" id="articl_tag">
           {{ tag }}
         </v-btn>
       </p>
@@ -24,9 +24,9 @@ import { useRoute } from "vue-router";
 
 const router = useRoute()
 // const article_title = router.meta.title
-const create_date = router.meta.create_date
-const update_date = router.meta.update_date
-const tags = router.meta.tags
+// const create_date = router.meta.create_date
+// const update_date = router.meta.update_date
+// const tags = router.meta.tags
 </script>
 
 <script>
@@ -43,6 +43,6 @@ export default {
       tab: null,
     }
   },
-  props: ['article_title'],
+  props: ['articl_info'],
 }
 </script>
