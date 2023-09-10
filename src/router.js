@@ -79,7 +79,7 @@ const routes = [
     name: 'job_article_test1',
     component: job_article_test1,
     meta: {
-      title: '仕事関連の記事1',
+      title: '仕事関連の記事1あああ',
       tags: ['PHP', 'Laravel'],
       create_date: "2023/01/01",
       update_date: "2023/02/02",
@@ -127,7 +127,6 @@ const routes = [
     name: 'error_page',
     component: error_page,
   }
-
 
 ]
 
