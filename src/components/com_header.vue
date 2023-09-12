@@ -1,3 +1,6 @@
+<!-- 
+  TODO: コンポーネントを作成したが未実装
+ -->
 <template>
   <v-app-bar color="teal-darken-4" image="..\src\components\img\みしまおこぜ.jpg">
     <template v-slot:image>
@@ -35,7 +38,6 @@ export default {
   data() {
     return {
       drawer: false,
-      tab: null,
     }
   }
 }

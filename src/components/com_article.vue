@@ -20,13 +20,7 @@
 </template>
 
 <script setup>
-import { useRoute } from "vue-router";
 
-const router = useRoute()
-// const article_title = router.meta.title
-// const create_date = router.meta.create_date
-// const update_date = router.meta.update_date
-// const tags = router.meta.tags
 </script>
 
 <script>
@@ -36,12 +30,6 @@ import job_article_test1 from "@/components/markdown/job_article_list/job_articl
 export default {
   components: {
     job_article_test1,
-  },
-  data() {
-    return {
-      drawer: false,
-      tab: null,
-    }
   },
   props: ['articl_info'],
 }
