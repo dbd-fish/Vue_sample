@@ -1,4 +1,10 @@
-@import url("./markdown.css");
+/*
+メインCSS
+*/
+
+@import url("./define.css");
+@import url("./card.css");
+@import url("./article.css");
 
 
 #app {
@@ -6,51 +12,34 @@
   font-weight: normal;
 }
 
-#md {
-  background-color: #f5f5f5;
-  line-height: 1.5;
-  padding: 2rem;
-  font-size: 16px;
-  padding-top: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
 .v-main {
   z-index: 1;
-  margin-top: 2rem;
+  margin-top: calc(var(--main_font_size) * 2);
   width: auto;
+  background-color: var(--default_background_color);
+
 }
 
-.v-container {}
-
 #main_col {
-  background-color: white;
+  background-color: var(--default_background_color);
   width: auto;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--main_font_size);
+  margin-right: var(--main_font_size);
 }
 
 #side_col {
-  background-color: white;
-  /* margin-left: 30%; */
   display: flex;
   align-items: center;
 }
 
 #side_col_components {
-  background-color: white;
-  /* margin-left: 30%; */
   display: flex;
   align-items: center;
 }
 
 .v-row {
-  background-color: white;
   width: auto;
 }
-
-.v-col {}
 
 .v-footer {
   padding-top: 10rem;
@@ -60,113 +49,4 @@
   right: 0;
   z-index: 1;
   width: auto;
-}
-
-
-.v-card {
-  position: center;
-}
-
-.v-app-bar {}
-
-.article_title {
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  margin: 1rem;
-}
-
-.md_header {
-  font-weight: bold;
-  font-size: 12px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  background-color: #f5f5f5;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-#articl_tag {
-  padding-right: 1rem;
-  margin-right: 10px;
-  text-transform: none;
-  border: #202020;
-  border: 1px solid #202020;
-  font-size: 12px;
-  background-color: #f5f5f5;
-}
-
-#card-img {
-  height: 100px;
-  border-radius: 50%;
-  background-image: url("image.jpg");
-  background-position: 54% 36%;
-  margin: 1rem;
-}
-
-#profile_card {
-  margin-right: 16px;
-  margin-left: 16px;
-  margin-bottom: 16px;
-  margin-top: none;
-}
-
-@media screen and (max-width: 767px) {
-  img.md {
-    width: 500px;
-  }
-}
-
-@media screen and (min-width: 767px) {
-
-
-  img.md {
-    width: 800px;
-  }
-}
-
-
-table,
-td,
-th {
-  border: 3px #0f1419 solid;
-  border-collapse: collapse;
-  /* color: red; */
-  padding: 0.5rem;
-}
-
-table {
-  margin: 2rem 0em 20px;
-  table-layout: fixed;
-}
-
-th {
-  background-color: #dcdcdc;
-  font-weight: bold;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-h1 {
-  border-bottom: solid;
-  padding-top: 1rem;
-  padding-bottom: 0.2rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  font-size: 18px;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  border-bottom: solid;
-  border-bottom-width: 0.1rem;
-  padding-top: 1rem;
-  padding-bottom: 0.2rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
 }

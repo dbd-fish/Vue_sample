@@ -1,0 +1,110 @@
+/*
+記事関連のCSS
+*/
+
+@import url("./define.css");
+
+.article_title {
+  font-weight: bold;
+  font-size: 20px;
+  font-size: calc(var(--main_font_size)*2);
+  text-align: center;
+  margin: 1rem;
+}
+
+.md_header {
+  font-weight: bold;
+  font-size: calc(var(--main_font_size)*0.8);
+  padding: calc(var(--main_font_size)*2);
+  margin-bottom: calc(var(--main_font_size)*2);
+  background-color: var(--text_background_color);
+  margin-left: var(--main_font_size);
+  margin-right: var(--main_font_size);
+}
+
+#articl_tag {
+  padding-right: var(--main_font_size);
+  margin-right: var(--main_font_size);
+  text-transform: none;
+  border-width: 1px;
+  border-color: var(--img_border_color);
+  border-style: solid;
+  font-size: calc(var(--main_font_size)*0.8);
+  background-color: var(--text_background_color);
+}
+
+
+
+
+.md_main {
+  background-color: var(--text_background_color);
+  line-height: 1.5;
+  padding: calc(var(--main_font_size) * 2);
+  font-size: var(--main_font_size);
+  padding-top: var(--main_font_size);
+  margin-left: var(--main_font_size);
+  margin-right: var(--main_font_size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border-bottom: solid;
+  border-bottom-width: calc(var(--main_font_size) * 0.1);
+  padding-top: var(--main_font_size);
+  padding-bottom: calc(var(--main_font_size) * 0.5);
+  margin-bottom: var(--main_font_size);
+  margin-top: var(--main_font_size);
+}
+
+h1 {
+  font-size: calc(var(--main_font_size) * 2);
+  border-bottom-width: calc(var(--main_font_size) * 0.3);
+}
+
+h2 {
+  font-size: calc(var(--main_font_size) * 1.8);
+}
+
+h3 {
+  font-size: calc(var(--main_font_size) * 1.6);
+}
+
+h4 {
+  font-size: calc(var(--main_font_size) * 1.4);
+}
+
+h5 {
+  font-size: calc(var(--main_font_size) * 1.2);
+}
+
+h6 {
+  font-size: calc(var(--main_font_size) * 1);
+  border-bottom-width: 0px;
+}
+
+/* TODO: このあたりのCSSはあとで整理 */
+table,
+td,
+th {
+  border: 3px #0f1419 solid;
+  border-collapse: collapse;
+  padding: calc(var(--main_font_size) * 0.5);
+}
+
+table {
+  margin: 2rem 0em 20px;
+  table-layout: fixed;
+}
+
+th {
+  background-color: #dcdcdc;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 20px;
+}

@@ -11,8 +11,8 @@
         </v-btn>
       </p>
     </section>
-    <section>
-      <div id="md">
+    <section class="md_main">
+      <div>
         <job_article_test1 />
       </div>
     </section>

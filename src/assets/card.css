@@ -1,0 +1,28 @@
+/*
+カード関連のCSS
+*/
+
+@import url("./define.css");
+
+.v-card {
+  position: center;
+}
+
+
+#card-img {
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("image.jpg");
+  background-position: 54% 36%;
+  margin: 1rem;
+  border-width: 1px;
+  border-color: var(--img_border_color);
+  border-style: solid;
+}
+
+#profile_card {
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  margin-top: none;
+}
