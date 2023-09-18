@@ -12,8 +12,9 @@
         </v-btn>
       </template>
       <v-spacer></v-spacer>
-        <v-btn v-for="tab in StoreMain.tab_list" :key="tab.tab_name" :value="tab.tab_name" :to="{ name: tab.tab_path }">
-          {{ tab.tab_name }}
+      <v-btn v-for="tab in StoreMain.tab_list" :key="tab.tab_name" :value="tab.tab_name" :to="{ name: tab.tab_path }"
+        class="d-none d-sm-none d-md-none d-lg-flex">
+                  {{ tab.tab_name }}
         </v-btn>
     </v-app-bar>
     <v-main>

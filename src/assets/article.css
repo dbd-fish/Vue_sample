@@ -44,6 +44,7 @@
   padding-top: var(--main_font_size);
   margin-left: var(--main_font_size);
   margin-right: var(--main_font_size);
+  overflow-wrap: anywhere !important;
 }
 
 h1,
