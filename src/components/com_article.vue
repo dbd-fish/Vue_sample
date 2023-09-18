@@ -13,24 +13,22 @@
     </section>
     <section class="md_main">
       <div>
-        <job_article_test1 />
+        <slot name="article_data"></slot>
+          {{ articl_info['articl_data'] }}
       </div>
     </section>
   </div>
 </template>
 
 <script setup>
+import job_article_test1 from "@/components/markdown/job_article_list/job_article_test1.md";
 
 </script>
 
 <script>
-import job_article_test1 from "@/components/markdown/job_article_list/job_article_test1.md";
-
 
 export default {
-  components: {
-    job_article_test1,
-  },
   props: ['articl_info'],
 }
+
 </script>
