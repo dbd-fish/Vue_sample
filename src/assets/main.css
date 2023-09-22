@@ -12,6 +12,10 @@
   font-weight: normal;
 }
 
+.main_img{
+  max-width: auto;
+}
+
 .v-main {
   z-index: 1;
   margin-top: calc(var(--main_font_size) * 2);

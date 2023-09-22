@@ -38,10 +38,10 @@
               <profile_card />
             </v-col>
             <v-col cols="12" id="side_col_components" class="justify-center align-start">
-              <adsense_card />
+              <!-- <adsense_card /> -->
             </v-col>
             <v-col cols="12" id="side_col_components" class="justify-center align-start">
-              <adsense_card />
+              <!-- <adsense_card /> -->
             </v-col>
           </v-row>
         </v-col>

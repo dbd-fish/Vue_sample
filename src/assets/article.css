@@ -4,6 +4,13 @@
 
 @import url("./define.css");
 
+.article_list {
+  width: 500px;
+  height: 300px;
+  margin: calc(var(--main_font_size) * 2);
+  background-color: var(--text_background_color);
+}
+
 .article_title {
   font-weight: bold;
   font-size: 20px;
