@@ -38,10 +38,10 @@
               <profile_card />
             </v-col>
             <v-col cols="12" id="side_col_components" class="justify-center align-start">
-              <!-- <adsense_card /> -->
+
             </v-col>
             <v-col cols="12" id="side_col_components" class="justify-center align-start">
-              <!-- <adsense_card /> -->
+
             </v-col>
           </v-row>
         </v-col>
@@ -55,9 +55,7 @@
 import { useStoreMain } from '@/stores/store_main';
 import { useRoute } from "vue-router";
 import article_data from "@/components/markdown/private_article_list/private_article_test1.md";
-
 import profile_card from "@/components/profile_card.vue";
-import adsense_card from "@/components/adsense_card.vue";
 import com_footer from "@/components/com_footer.vue";
 // TODO: ヘッダーをコンポーネント化するとナビゲーションドロワーが機能しなくなるためコンポーネント化は保留
 // import com_header from "@/components/com_header.vue";

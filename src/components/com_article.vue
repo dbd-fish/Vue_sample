@@ -14,14 +14,13 @@
     <section class="md_main">
       <div>
         <slot name="article_data"></slot>
-          {{ articl_info['articl_data'] }}
+        {{ articl_info['articl_data'] }}
       </div>
     </section>
   </div>
 </template>
 
 <script setup>
-import job_article_test1 from "@/components/markdown/job_article_list/job_article_test1.md";
 
 </script>
 

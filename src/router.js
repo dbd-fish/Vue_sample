@@ -15,7 +15,6 @@ import error_page from '@/page/error_page.vue'
 import job_article_list from '@/page/job_article_list.vue'
 
 
-import test from '@/page/test.vue'
 
 const routes = [
   {
@@ -70,7 +69,6 @@ const routes = [
   {
     path: '/test',
     name: 'test',
-    component: test,
     meta: { title: 'テスト' }
   },
 

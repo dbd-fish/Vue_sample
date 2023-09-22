@@ -30,7 +30,7 @@
             <h1 style=" border-bottom: None;">仕事関連の記事</h1>
           </div>
           <v-card v-for="job_article_card in StoreMain.job_article_card_list" :key="job_article_card.card_name"
-            :value="job_article_card.card_name" :to="{ name: job_article_card.card_path }" class="article_list">
+            :value="job_article_card.card_name" :to="{ name: job_article_card.card_path }" >
             {{ job_article_card.card_name }}
           </v-card>
         </v-col>
@@ -40,10 +40,10 @@
               <profile_card />
             </v-col>
             <v-col cols="12" id="side_col_components" class="justify-center align-start">
-              <!-- <adsense_card /> -->
+
             </v-col>
             <v-col cols="12" id="side_col_components" class="justify-center align-start">
-              <!-- <adsense_card /> -->
+
             </v-col>
           </v-row>
         </v-col>
@@ -57,9 +57,7 @@
 import { useStoreMain } from '@/stores/store_main';
 import { useRoute } from "vue-router";
 import article_data from "@/components/markdown/job_article_list/job_article_test1.md";
-
 import profile_card from "@/components/profile_card.vue";
-import adsense_card from "@/components/adsense_card.vue";
 import com_footer from "@/components/com_footer.vue";
 // TODO: ヘッダーをコンポーネント化するとナビゲーションドロワーが機能しなくなるためコンポーネント化は保留
 // import com_header from "@/components/com_header.vue";

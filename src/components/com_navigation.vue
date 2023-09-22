@@ -12,10 +12,6 @@
 
 <script setup>
 import { useStoreMain } from '@/stores/store_main';
-import { useRoute } from "vue-router";
-
-
-const router = useRoute()
 
 const StoreMain = useStoreMain();
 StoreMain.update_now_page("仕事関連の記事");
