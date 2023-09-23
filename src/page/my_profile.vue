@@ -50,11 +50,66 @@
           id="main_col"
           class="justify-center align-start"
         >
-          <com_article :articl_info="articl_info">
-            <template v-slot:article_data>
-              <article_data />
-            </template>
-          </com_article>
+          <div class="md_header">
+            <h1 style="border-bottom: None">自己紹介</h1>
+          </div>
+          <div class="md_main">
+            <v-img
+              class="main_img"
+              src="src\components\img\pforile.png"
+              alt="自己紹介"
+            ></v-img>
+            <p>
+              愛知県内在住のWebエンジニア兼IT講師。<br />
+              Webバックエンドがメインだが、画面を作ったり環境構築もできる。<br />
+              IT講師ではJavaなどを教えている。<br />
+            </p>
+            <h2>資格</h2>
+            <ul>
+              <li>AWS Certified Cloud Practitioner (CLF)</li>
+              <li>AWS Certified Solutions Architect – Associate</li>
+              <li>Python 3 エンジニア認定データ分析</li>
+            </ul>
+
+            <h2>アカウント</h2>
+            <ul>
+              <li>
+                <a href="https://github.com/dbd-fish" target="_blank">GitHub</a>
+              </li>
+              <li>
+                <a href="https://qiita.com/dbd_fish" target="_blank">Qiita</a>
+              </li>
+            </ul>
+
+            <h1>スキル</h1>
+            <h2>言語</h2>
+            PHP、Python、Java、HTML、CSS、JavaScript、C、ASMなど色々やってきました。
+            <h2>フレームワーク</h2>
+            Larave、Django、Vue.js、FastAPI
+
+            <h2>DB</h2>
+            Postgres、DynamoDB、MySQL
+            <h2>その他</h2>
+            AWS、Azure(VMのみ)
+
+            <h1>経歴</h1>
+            工学系の大学卒業<br />
+            ↓<br />
+            大学院を数か月で中退<br />
+            ↓<br />
+            組み込み系SIerに就職<br />
+            ↓<br />
+            Web系SESに就職<br />
+            ↓<br />
+            フリーランス<br />
+            <br />
+            職務経歴は
+            <router-link to="/my_resume"> こちら </router-link>
+            をご覧ください。
+            <h1>趣味</h1>
+            魚を調理すること<br />
+            たまにゲームをすること<br />
+          </div>
         </v-col>
         <v-col
           cols="12"
@@ -95,29 +150,13 @@
 
 <script setup>
 import { useStoreMain } from "@/stores/store_main";
-import { useRoute } from "vue-router";
-import article_data from "@/components/markdown/private_article_list/private_article_test2.md";
 import profile_card from "@/components/profile_card.vue";
 import com_footer from "@/components/com_footer.vue";
 // TODO: ヘッダーをコンポーネント化するとナビゲーションドロワーが機能しなくなるためコンポーネント化は保留
 // import com_header from "@/components/com_header.vue";
 // import com_navigation from "@/components/com_navigation.vue";
-import com_article from "@/components/com_article.vue";
 
 const StoreMain = useStoreMain();
-
-const router = useRoute();
-const article_title = router.meta.title;
-const create_date = router.meta.create_date;
-const update_date = router.meta.update_date;
-const tags = router.meta.tags;
-
-var articl_info = {
-  article_title: article_title,
-  create_date: create_date,
-  update_date: update_date,
-  tags: tags,
-};
 </script>
 
 <script>
