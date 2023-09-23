@@ -91,7 +91,7 @@ h5 {
 
 h6 {
   font-size: calc(var(--main_font_size) * 1);
-  border-bottom-width: 0px;
+  border-bottom-width: 0;
 }
 
 /* TODO: このあたりのCSSはあとで整理 */
@@ -104,7 +104,7 @@ th {
 }
 
 table {
-  margin: 2rem 0em 20px;
+  margin: 2rem 0 20px;
   table-layout: fixed;
 }
 

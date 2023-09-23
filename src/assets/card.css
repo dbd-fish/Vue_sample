@@ -6,9 +6,8 @@
 
 .v-card {
   position: center;
-  margin:var(--main_font_size);
+  margin: var(--main_font_size);
 }
-
 
 #card-img {
   height: 100px;
@@ -22,8 +21,5 @@
 }
 
 #profile_card {
-  margin-right: 16px;
-  margin-left: 16px;
-  margin-bottom: 16px;
-  margin-top: none;
+  margin: none 16px 16px;
 }

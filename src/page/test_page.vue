@@ -5,7 +5,6 @@
         <p>vvvvvvvvvv</p>
       </v-container>
     </v-col>
-
     <v-col>
       <v-container class="side_container">
         <p>aaaaaaaaa</p>
