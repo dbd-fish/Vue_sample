@@ -37,7 +37,7 @@
           :value="tab.tab_name"
           :to="{ name: tab.tab_path }"
         >
-          <v-list-item-title> {{ tab.tab_name }}</v-list-item-title>
+          <v-list-item-title> aaa{{ tab.tab_name }}</v-list-item-title>
         </v-list-item>
       </v-navigation-drawer>
       <v-row justify="center" align-content-sm="center">

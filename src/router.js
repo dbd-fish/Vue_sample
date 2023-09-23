@@ -25,13 +25,13 @@ const routes = [
     path: "/home_page",
     name: "home_page",
     component: home_page,
-    meta: { title: "default" },
+    meta: { title: "ホーム" },
   },
   {
     path: "/my_resume",
     name: "my_resume",
     component: my_resume,
-    meta: { title: "職務経歴・スキル" },
+    meta: { title: "職務経歴" },
   },
   {
     path: "/my_profile",
