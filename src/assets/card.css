@@ -6,6 +6,7 @@
 
 .v-card {
   position: center;
+  margin:var(--main_font_size);
 }
 
 

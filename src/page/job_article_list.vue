@@ -30,8 +30,21 @@
             <h1 style=" border-bottom: None;">仕事関連の記事</h1>
           </div>
           <v-card v-for="job_article_card in StoreMain.job_article_card_list" :key="job_article_card.card_name"
-            :value="job_article_card.card_name" :to="{ name: job_article_card.card_path }" >
-            {{ job_article_card.card_name }}
+            :value="job_article_card.card_name" :to="{ name: job_article_card.card_path }" class="mx-auto"
+          max-width="344" >
+          <v-img
+      cover
+      height="250"
+      :src="job_article_card.card_img"
+    ></v-img>
+          <v-card-text>
+      <v-card-title>
+        {{ job_article_card.card_name }}
+      </v-card-title>
+      <div class="text--primary">
+        {{ job_article_card.card_text }}
+      </div>
+    </v-card-text>
           </v-card>
         </v-col>
         <v-col cols="12" sm="12" md="12" lg="2" xl="2" id="side_col" class="justify-center align-start">

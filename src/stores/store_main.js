@@ -20,6 +20,9 @@ export const useStoreMain = defineStore('store_main', {
         tags: ['PHP', 'Laravel'],
         create_date: "2023/01/01",
         update_date: "2023/02/02",
+        card_text: "仕事関連記事_テスト1のテキスト",
+        card_img: "src/components/img/job_article/仕事記事イメージ１.png",
+
       },
       {
         card_name: '仕事関連記事_テスト2',
@@ -27,6 +30,9 @@ export const useStoreMain = defineStore('store_main', {
         tags: ['Python', 'Django'],
         create_date: "2023/02/01",
         update_date: "2023/03/02",
+        card_text: "仕事関連記事_テスト2のテキストああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ",
+        card_img: "src/components/img/job_article/仕事記事イメージ2.jpg",
+
       },
     ],
     private_article_card_list: [
@@ -36,6 +42,9 @@ export const useStoreMain = defineStore('store_main', {
         tags: ['ゲーム', 'アニメ'],
         create_date: "2022/02/01",
         update_date: "2022/03/02",
+        card_text: "趣味関連記事_テスト1のテキスト",
+        card_img: "src/components/img/private_article/趣味記事イメージ１.jpg",
+        
       },
       {
         card_name: '趣味関連記事_テスト2',
@@ -43,6 +52,8 @@ export const useStoreMain = defineStore('store_main', {
         tags: ['魚', '料理'],
         create_date: "2022/02/01",
         update_date: "2022/03/02",
+        card_text: "趣味関連記事_テスト2のテキスト",
+        card_img: "src/components/img/private_article/趣味記事イメージ2.jpg",
       },
     ],
   }),

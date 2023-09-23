@@ -29,9 +29,22 @@
           <div class="md_header">
             <h1 style=" border-bottom: None;">趣味関連の記事</h1>
           </div>
-          <v-card v-for="job_article_card in StoreMain.job_article_card_list" :key="job_article_card.card_name"
-            :value="job_article_card.card_name" :to="{ name: job_article_card.card_path }" class="article_list">
-            {{ job_article_card.card_name }}
+          <v-card v-for="private_article_card in StoreMain.private_article_card_list" :key="private_article_card.card_name"
+            :value="private_article_card.card_name" :to="{ name: private_article_card.card_path }" class="mx-auto"
+          max-width="344" >
+          <v-img
+      cover
+      height="250"
+      :src="private_article_card.card_img"
+    ></v-img>
+          <v-card-text>
+      <v-card-title>
+        {{ private_article_card.card_name }}
+      </v-card-title>
+      <div class="text--primary">
+        {{ private_article_card.card_text }}
+      </div>
+    </v-card-text>
           </v-card>
         </v-col>
         <v-col cols="12" sm="12" md="12" lg="2" xl="2" id="side_col" class="justify-center align-start">
