@@ -3,15 +3,35 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="src\components\img\favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vite App</title>
+  <!-- Vue is not defineの対策 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
 </body>
 
 </html>
+
+<!-- OGPを使用することを宣言 -->
+
+<head prefix="og: http://ogp.me/ns#">
+  <!-- ページタイトル -->
+  <meta property="og:title" content="dbd-fishのブログ" />
+  <!-- ページの種類。
+  トップページなら"Website"、トップページ以外なら"Article"、
+  ブログなら"blog"を設定する -->
+  <meta property="og:type" content="website" />
+  <!-- ページの説明-->
+  <meta property="og:description" content="愛知在住エンジニアのブログ" />
+  <!-- ページのURL（絶対パス）-->
+  <meta property="og:url" content="http://localhost:5173" />
+  <!-- ページの名前-->
+  <meta property="og:site_name" content="dbd-fishのブログ" />
+  <!-- アイキャッチ用の画像のURL（絶対パス）-->
+  <meta property="og:image" content="http://localhost:5173/src/components/img/pforile.png" />

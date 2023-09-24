@@ -16,7 +16,7 @@
 
 以下、デフォルトのREADMEです。
 
-# homepate_vue
+# dbd-fish_blog_vue
 
 This template should help get you started developing with Vue 3 in Vite.
 

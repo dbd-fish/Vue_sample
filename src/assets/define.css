@@ -1,0 +1,10 @@
+/*
+よく使用する値を定義
+*/
+
+:root {
+  --text_background_color: white;
+  --default_background_color: #f5f5f5;
+  --img_border_color: #202020;
+  --main_font_size: 16px;
+}

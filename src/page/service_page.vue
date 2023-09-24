@@ -50,11 +50,28 @@
           id="main_col"
           class="justify-center align-start"
         >
-          <com_article :articl_info="articl_info">
-            <template v-slot:article_data>
-              <article_data />
-            </template>
-          </com_article>
+          <div class="md_header">
+            <h1 style="border-bottom: None">事業内容</h1>
+          </div>
+          <div class="md_main">
+            <h2>フリーランス業務(SES)</h2>
+            <ul>
+              <li>PHPやPythonなどを用いたweb系バックエンド開発</li>
+              <li>Javaなど用いたIT講師</li>
+              <li>プログラミングスクールのコーチ</li>
+            </ul>
+
+            <h2>プロダクト</h2>
+            <ul>
+              <li>本ブログ</li>
+            </ul>
+
+            <h2>その他</h2>
+            <ul>
+              <li>太陽光を用いたマイニング(予定)</li>
+              <li>本ブログの広告収入(目標)</li>
+            </ul>
+          </div>
         </v-col>
         <v-col
           cols="12"
@@ -95,29 +112,13 @@
 
 <script setup>
 import { useStoreMain } from "@/stores/store_main";
-import { useRoute } from "vue-router";
-import article_data from "@/components/markdown/private_article_list/private_article_test2.md";
 import profile_card from "@/components/profile_card.vue";
 import com_footer from "@/components/com_footer.vue";
 // TODO: ヘッダーをコンポーネント化するとナビゲーションドロワーが機能しなくなるためコンポーネント化は保留
 // import com_header from "@/components/com_header.vue";
 // import com_navigation from "@/components/com_navigation.vue";
-import com_article from "@/components/com_article.vue";
 
 const StoreMain = useStoreMain();
-
-const router = useRoute();
-const article_title = router.meta.title;
-const create_date = router.meta.create_date;
-const update_date = router.meta.update_date;
-const tags = router.meta.tags;
-
-var articl_info = {
-  article_title: article_title,
-  create_date: create_date,
-  update_date: update_date,
-  tags: tags,
-};
 </script>
 
 <script>

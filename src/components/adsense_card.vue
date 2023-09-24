@@ -25,7 +25,6 @@
   margin-right: 1rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  margin-top: none;
+  margin-home_page: none;
 }
 </style>
-
