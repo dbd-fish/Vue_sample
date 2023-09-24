@@ -54,7 +54,7 @@
             <h1 style="border-bottom: None">お問い合わせ</h1>
           </div>
           <div class="md_main">
-              <p>dbd.fish0805@gmail.com</p>
+            <p>dbd.fish0805@gmail.com</p>
           </div>
         </v-col>
         <v-col
