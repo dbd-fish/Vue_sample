@@ -54,9 +54,7 @@
             <h1 style="border-bottom: None">HOME</h1>
           </div>
           <div class="md_main">
-            <div class="md_header">
-              <p>TODO</p>
-            </div>
+            <article_data />
           </div>
         </v-col>
         <v-col
@@ -98,6 +96,7 @@
 
 <script setup>
 import { useStoreMain } from "@/stores/store_main";
+import article_data from "@/components/markdown/home_page.md";
 import profile_card from "@/components/profile_card.vue";
 import com_footer from "@/components/com_footer.vue";
 // TODO: ヘッダーをコンポーネント化するとナビゲーションドロワーが機能しなくなるためコンポーネント化は保留
