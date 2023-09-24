@@ -55,18 +55,16 @@
           </div>
           <v-row justify="center" align-content-sm="center">
             <v-col
-              id="main_col"
               v-for="private_article_card in StoreMain.private_article_card_list"
               :key="private_article_card.card_name"
               :value="private_article_card.card_name"
-              class="justify-center align-start"
+              cols="12"
+              sm="12"
+              md="12"
+              lg="6"
+              xl="6"
             >
-              <v-card
-                :to="{ name: private_article_card.card_path }"
-                class="mx-auto"
-                width="344"
-                height="344"
-              >
+              <v-card :to="{ name: private_article_card.card_path }">
                 <v-img
                   cover
                   height="250"
