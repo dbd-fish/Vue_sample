@@ -53,28 +53,36 @@
           <div class="md_header">
             <h1 style="border-bottom: None">趣味関連の記事</h1>
           </div>
-          <v-card
-            v-for="private_article_card in StoreMain.private_article_card_list"
-            :key="private_article_card.card_name"
-            :value="private_article_card.card_name"
-            :to="{ name: private_article_card.card_path }"
-            class="mx-auto"
-            max-width="344"
-          >
-            <v-img
-              cover
-              height="250"
-              :src="private_article_card.card_img"
-            ></v-img>
-            <v-card-text>
-              <v-card-title>
-                {{ private_article_card.card_name }}
-              </v-card-title>
-              <div class="text--primary">
-                {{ private_article_card.card_text }}
-              </div>
-            </v-card-text>
-          </v-card>
+          <v-row justify="center" align-content-sm="center">
+            <v-col
+              id="main_col"
+              v-for="private_article_card in StoreMain.private_article_card_list"
+              :key="private_article_card.card_name"
+              :value="private_article_card.card_name"
+              class="justify-center align-start"
+            >
+              <v-card
+                :to="{ name: private_article_card.card_path }"
+                class="mx-auto"
+                width="344"
+                height="344"
+              >
+                <v-img
+                  cover
+                  height="250"
+                  :src="private_article_card.card_img"
+                ></v-img>
+                <v-card-text>
+                  <v-card-title>
+                    {{ private_article_card.card_name }}
+                  </v-card-title>
+                  <div class="text--primary">
+                    {{ private_article_card.card_text }}
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
         </v-col>
         <v-col
           cols="12"
