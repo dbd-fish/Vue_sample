@@ -35,6 +35,8 @@
 | 趣味関連の記事リスト |/private_article_list  | 未完成: 趣味の記事リストを表示 |
 | 趣味関連の記事1  | /private_article_list/private_article_test1 | 未完成:趣味の記事1を表示 |
 | 趣味関連の記事2  | /private_article_list/private_article_test2 |未完成: 趣味の記事2を表示 |
+| 404エラーページ  | その他のパス | 存在しないパスが指定されたときに表示 |
+
 
 ## このブログ作成で苦労した点
 - JavaScriptフレームワーク(Vue, Vue Router, Pinia)の仕組み理解
