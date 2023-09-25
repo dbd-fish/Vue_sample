@@ -6,7 +6,7 @@
 
 .v-card {
   position: center;
-  margin: var(--main_font_size);
+  margin: var(--foo-main-font-size);
 }
 
 #card-img {
@@ -16,10 +16,10 @@
   background-position: 54% 36%;
   margin: 1rem;
   border-width: 1px;
-  border-color: var(--img_border_color);
+  border-color: var(--foo-img-border-color);
   border-style: solid;
 }
 
-#profile_card {
+#profile-card {
   margin: none 16px 16px;
 }
