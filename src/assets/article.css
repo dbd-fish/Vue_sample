@@ -2,7 +2,7 @@
 記事関連のCSS
 */
 
-@import url("./define.css");
+@import "./define.css";
 
 .article_list {
   width: auto;

@@ -2,9 +2,9 @@
 メインCSS
 */
 
-@import url("./define.css");
-@import url("./card.css");
-@import url("./article.css");
+@import "./define.css";
+@import "./card.css";
+@import "./article.css";
 
 
 #app {
