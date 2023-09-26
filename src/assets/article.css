@@ -2,55 +2,52 @@
 記事関連のCSS
 */
 
-@import url("./define.css");
+@import "./define.css";
 
-.article_list {
+.article-list {
   width: auto;
   height: auto;
-  margin: calc(var(--main_font_size) * 2);
-  background-color: var(--text_background_color);
+  margin: calc(var(--foo-main-font-size) * 2);
+  background-color: var(--text-background-color);
 }
 
-.article_title {
+.article-title {
   font-weight: bold;
   font-size: 20px;
-  font-size: calc(var(--main_font_size)*2);
+  font-size: calc(var(--foo-main-font-size) * 2);
   text-align: center;
   margin: 1rem;
 }
 
-.md_header {
+.md-header {
   font-weight: bold;
-  font-size: calc(var(--main_font_size)*0.8);
-  padding: calc(var(--main_font_size)*2);
-  margin-bottom: calc(var(--main_font_size)*2);
-  background-color: var(--text_background_color);
-  margin-left: var(--main_font_size);
-  margin-right: var(--main_font_size);
+  font-size: calc(var(--foo-main-font-size) * 0.8);
+  padding: calc(var(--foo-main-font-size) * 2);
+  margin-bottom: calc(var(--foo-main-font-size) * 2);
+  background-color: var(--text-background-color);
+  margin-left: var(--foo-main-font-size);
+  margin-right: var(--foo-main-font-size);
 }
 
-#articl_tag {
-  padding-right: var(--main_font_size);
-  margin-right: var(--main_font_size);
+#articl-tag {
+  padding-right: var(--foo-main-font-size);
+  margin-right: var(--foo-main-font-size);
   text-transform: none;
   border-width: 1px;
-  border-color: var(--img_border_color);
+  border-color: var(--foo-img-border-color);
   border-style: solid;
-  font-size: calc(var(--main_font_size)*0.8);
-  background-color: var(--text_background_color);
+  font-size: calc(var(--foo-main-font-size) * 0.8);
+  background-color: var(--text-background-color);
 }
 
-
-
-
-.md_main {
-  background-color: var(--text_background_color);
+.md-main {
+  background-color: var(--text-background-color);
   line-height: 1.5;
-  padding: calc(var(--main_font_size) * 2);
-  font-size: var(--main_font_size);
-  padding-top: var(--main_font_size);
-  margin-left: var(--main_font_size);
-  margin-right: var(--main_font_size);
+  padding: calc(var(--foo-main-font-size) * 2);
+  font-size: var(--foo-main-font-size);
+  padding-top: var(--foo-main-font-size);
+  margin-left: var(--foo-main-font-size);
+  margin-right: var(--foo-main-font-size);
   overflow-wrap: anywhere !important;
 }
 
@@ -61,36 +58,36 @@ h4,
 h5,
 h6 {
   border-bottom: solid;
-  border-bottom-width: calc(var(--main_font_size) * 0.1);
-  padding-top: var(--main_font_size);
-  padding-bottom: calc(var(--main_font_size) * 0.5);
-  margin-bottom: var(--main_font_size);
-  margin-top: var(--main_font_size);
+  border-bottom-width: calc(var(--foo-main-font-size) * 0.1);
+  padding-top: var(--foo-main-font-size);
+  padding-bottom: calc(var(--foo-main-font-size) * 0.5);
+  margin-bottom: var(--foo-main-font-size);
+  margin-top: var(--foo-main-font-size);
 }
 
 h1 {
-  font-size: calc(var(--main_font_size) * 2);
-  border-bottom-width: calc(var(--main_font_size) * 0.3);
+  font-size: calc(var(--foo-main-font-size) * 2);
+  border-bottom-width: calc(var(--foo-main-font-size) * 0.3);
 }
 
 h2 {
-  font-size: calc(var(--main_font_size) * 1.8);
+  font-size: calc(var(--foo-main-font-size) * 1.8);
 }
 
 h3 {
-  font-size: calc(var(--main_font_size) * 1.6);
+  font-size: calc(var(--foo-main-font-size) * 1.6);
 }
 
 h4 {
-  font-size: calc(var(--main_font_size) * 1.4);
+  font-size: calc(var(--foo-main-font-size) * 1.4);
 }
 
 h5 {
-  font-size: calc(var(--main_font_size) * 1.2);
+  font-size: calc(var(--foo-main-font-size) * 1.2);
 }
 
 h6 {
-  font-size: calc(var(--main_font_size) * 1);
+  font-size: calc(var(--foo-main-font-size) * 1);
   border-bottom-width: 0;
 }
 
@@ -100,7 +97,7 @@ td,
 th {
   border: 3px #0f1419 solid;
   border-collapse: collapse;
-  padding: calc(var(--main_font_size) * 0.5);
+  padding: calc(var(--foo-main-font-size) * 0.5);
 }
 
 table {

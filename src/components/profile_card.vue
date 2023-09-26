@@ -1,5 +1,5 @@
 <template>
-  <v-card id="profile_card" max-width="400">
+  <v-card id="profile-card" max-width="400">
     <v-img
       class="mx-auto"
       height="150"

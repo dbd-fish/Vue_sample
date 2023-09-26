@@ -47,7 +47,7 @@
           md="12"
           lg="6"
           xl="6"
-          id="main_col"
+          id="main-col"
           class="justify-center align-start"
         >
           <div id="md">お探しのページは見つかりませんでした。</div>
@@ -58,26 +58,26 @@
           md="12"
           lg="2"
           xl="2"
-          id="side_col"
+          id="side-col"
           class="justify-center align-start"
         >
           <v-row justify="center" align-content-sm="center">
             <v-col
               cols="12"
-              id="side_col_components"
+              id="side-col-components"
               class="justify-center align-start"
             >
               <profile_card />
             </v-col>
             <v-col
               cols="12"
-              id="side_col_components"
+              id="side-col-components"
               class="justify-center align-start"
             >
             </v-col>
             <v-col
               cols="12"
-              id="side_col_components"
+              id="side-col-components"
               class="justify-center align-start"
             >
             </v-col>

@@ -2,44 +2,39 @@
 メインCSS
 */
 
-@import url("./define.css");
-@import url("./card.css");
-@import url("./article.css");
-
+@import "./define.css";
+@import "./card.css";
+@import "./article.css";
 
 #app {
   margin: 0 auto;
   font-weight: normal;
 }
 
-.main_img{
+.main-img {
   max-width: auto;
 }
 
 .v-main {
   z-index: 1;
-  margin-top: calc(var(--main_font_size) * 2);
+  margin-top: calc(var(--foo-main-font-size) * 2);
   width: auto;
-  background-color: var(--default_background_color);
-
+  background-color: var(--foo-default-background-color);
 }
 
-#main_col {
-  background-color: var(--default_background_color);
+#main-col {
+  background-color: var(--foo-default-background-color);
   width: auto;
-  margin-left: var(--main_font_size);
-  margin-right: var(--main_font_size);
+  margin-left: var(--foo-main-font-size);
+  margin-right: var(--foo-main-font-size);
 }
 
-
-
-
-#side_col {
+#side-col {
   display: flex;
   align-items: center;
 }
 
-#side_col_components {
+#side-col-components {
   display: flex;
   align-items: center;
 }
