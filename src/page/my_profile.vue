@@ -1,9 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      color="teal-darken-4"
-      image="src\components\img\みしまおこぜ.jpg"
-    >
+    <v-app-bar color="teal-darken-4" :image="misima">
       <template v-slot:image>
         <v-img
           gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"
@@ -54,11 +51,7 @@
             <h1 style="border-bottom: None">自己紹介</h1>
           </div>
           <div class="md-main">
-            <v-img
-              class="main-img"
-              src="src\components\img\pforile.png"
-              alt="自己紹介"
-            ></v-img>
+            <v-img class="main-img" :src="profile_img" alt="自己紹介"></v-img>
             <p>
               愛知県内在住のWebエンジニア兼IT講師。<br />
               Webバックエンドがメインだが、画面を作ったり環境構築もできる。<br />
@@ -149,6 +142,8 @@
 </template>
 
 <script setup>
+import profile_img from "@/components/img/profile.png";
+import misima from "@/components/img/misima.jpg";
 import { useStoreMain } from "@/stores/store_main";
 import profile_card from "@/components/profile_card.vue";
 import com_footer from "@/components/com_footer.vue";

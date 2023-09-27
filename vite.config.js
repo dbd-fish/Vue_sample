@@ -8,7 +8,7 @@ import Markdown from "vite-plugin-vue-markdown";
 export default defineConfig({
   plugins: [
     vue({
-      include: [/\.vue$/, /\.md$/], // <--
+      include: [/\.vue$/, /\.md$/],
     }),
     Markdown({}),
   ],

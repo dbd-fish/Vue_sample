@@ -1,9 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      color="teal-darken-4"
-      image="src\components\img\みしまおこぜ.jpg"
-    >
+    <v-app-bar color="teal-darken-4" :image="misima">
       <template v-slot:image>
         <v-img
           gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"
@@ -95,6 +92,7 @@
 </template>
 
 <script setup>
+import misima from "@/components/img/misima.jpg";
 import { useStoreMain } from "@/stores/store_main";
 import article_data from "@/components/markdown/home_page.md";
 import profile_card from "@/components/profile_card.vue";

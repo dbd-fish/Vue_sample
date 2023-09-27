@@ -5,7 +5,7 @@
       height="150"
       width="150"
       id="card-img"
-      src="..\src\components\img\pforile.png"
+      :src="profile_img"
       cover
     >
     </v-img>
@@ -27,4 +27,6 @@
   </v-card>
 </template>
 
-<style></style>
+<script setup>
+import profile_img from "@/components/img/profile.png";
+</script>
