@@ -19,7 +19,8 @@ element.insertAdjacentHTML('afterend', '<p>' + d.toTimeString() + '</p>');
 
 let btnReload = document.getElementById('btnReload');
 btnReload.addEventListener('click', function(){
-    location.reload();
+  var redirectPath = '/Vue_sample/';
+    location.href = redirectPath
 });
 </script>
 
