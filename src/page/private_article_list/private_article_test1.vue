@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar
       color="teal-darken-4"
-      image="..\src\components\img\みしまおこぜ.jpg"
+      image="../src/components/img/みしまおこぜ.jpg"
     >
       <template v-slot:image>
         <v-img

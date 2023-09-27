@@ -2,10 +2,7 @@
   TODO: コンポーネントを作成したが未実装
  -->
 <template>
-  <v-app-bar
-    color="teal-darken-4"
-    image="..\src\components\img\みしまおこぜ.jpg"
-  >
+  <v-app-bar color="teal-darken-4" image="src\components\img\みしまおこぜ.jpg">
     <template v-slot:image>
       <v-img
         gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"
