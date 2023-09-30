@@ -1,28 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>サンプル</title>
+  <script>
+    var pathName = window.location.pathname;
+    var redirectPath = '/Vue_sample';
+    location.href = redirectPath + '/#/' + encodeURI(pathName);
+  </script>
 </head>
-<body>
-
-<h1>サンプル</h1>
-
-<p id="msg">現在のページを再読み込みします</p>
-
-<input type="button" value="reload" id="btnReload">
-
-<script>
-let d = new Date();
-let element = document.getElementById('msg');
-element.insertAdjacentHTML('afterend', '<p>' + d.toTimeString() + '</p>');
-
-let btnReload = document.getElementById('btnReload');
-btnReload.addEventListener('click', function(){
-  var redirectPath = '/Vue_sample/';
-    location.href = redirectPath
-});
-</script>
-
-</body>
 </html>
