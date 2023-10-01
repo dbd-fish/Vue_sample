@@ -12,9 +12,6 @@
 #card-img {
   height: 100px;
   border-radius: 50%;
-
-  /* background-image: url("image.jpg"); */
-  background-position: 54% 36%;
   margin: 1rem;
   border-width: 1px;
   border-color: var(--foo-img-border-color);

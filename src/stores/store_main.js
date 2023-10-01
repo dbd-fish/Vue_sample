@@ -1,9 +1,8 @@
 import { defineStore } from "pinia";
-import job_img1 from "@/components/img/job_article/仕事記事イメージ１.png"
-import job_img2 from "@/components/img/job_article/仕事記事イメージ2.jpg"
-import private_img1 from "@/components/img/private_article/趣味記事イメージ１.jpg"
-import private_img2 from "@/components/img/private_article/趣味記事イメージ2.jpg"
-
+import job_img1 from "@/components/img/job_article/仕事記事イメージ１.png";
+import job_img2 from "@/components/img/job_article/仕事記事イメージ2.jpg";
+import private_img1 from "@/components/img/private_article/趣味記事イメージ１.jpg";
+import private_img2 from "@/components/img/private_article/趣味記事イメージ2.jpg";
 
 export const useStoreMain = defineStore("store_main", {
   state: () => ({
