@@ -5,7 +5,7 @@
 ブログとして運営できるようにします。
 
 本プロダクトの詳細について、
-http://localhost:5173/Vue_sample/#/home_page
+https://dbd-fish.github.io/Vue_sample/#/home_page
 をご覧ください。
 
 導入したライブラリやフレームワークについては下記の通りです。
