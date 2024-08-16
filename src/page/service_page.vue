@@ -51,7 +51,7 @@
             <h1 style="border-bottom: None">事業内容</h1>
           </div>
           <div class="md-main">
-            <h2>フリーランス業務(SES)</h2>
+            <h2>フリーランス業務</h2>
             <ul>
               <li>PHPやPythonなどを用いたweb系バックエンド開発</li>
               <li>Javaなど用いたIT講師</li>
