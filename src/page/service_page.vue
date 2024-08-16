@@ -1,9 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      color="teal-darken-4"
-      image="..\src\components\img\みしまおこぜ.jpg"
-    >
+    <v-app-bar color="teal-darken-4" :image="misima">
       <template v-slot:image>
         <v-img
           gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"
@@ -63,13 +60,13 @@
 
             <h2>プロダクト</h2>
             <ul>
-              <li>本ブログ</li>
+              <li>本ブログ(予定)</li>
             </ul>
 
             <h2>その他</h2>
             <ul>
               <li>太陽光を用いたマイニング(予定)</li>
-              <li>本ブログの広告収入(目標)</li>
+              <li>本ブログの広告収入(予定)</li>
             </ul>
           </div>
         </v-col>
@@ -111,6 +108,7 @@
 </template>
 
 <script setup>
+import misima from "@/components/img/misima.jpg";
 import { useStoreMain } from "@/stores/store_main";
 import profile_card from "@/components/profile_card.vue";
 import com_footer from "@/components/com_footer.vue";

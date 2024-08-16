@@ -57,21 +57,25 @@ h3,
 h4,
 h5,
 h6 {
-  border-bottom: solid;
-  border-bottom-width: calc(var(--foo-main-font-size) * 0.1);
-  padding-top: var(--foo-main-font-size);
-  padding-bottom: calc(var(--foo-main-font-size) * 0.5);
-  margin-bottom: var(--foo-main-font-size);
-  margin-top: var(--foo-main-font-size);
+  padding-top: calc(var(--foo-main-font-size) * 0.2);
+  padding-bottom: calc(var(--foo-main-font-size) * 0.2);
+  margin-bottom: calc(var(--foo-main-font-size) * 0.2);
+  margin-top: calc(var(--foo-main-font-size) * 1.5);
 }
 
 h1 {
+  border-bottom: solid;
   font-size: calc(var(--foo-main-font-size) * 2);
   border-bottom-width: calc(var(--foo-main-font-size) * 0.3);
+  margin-bottom: calc(var(--foo-main-font-size) * 1);
+  margin-top: calc(var(--foo-main-font-size) * 1);
 }
 
 h2 {
+  border-bottom: solid;
   font-size: calc(var(--foo-main-font-size) * 1.8);
+  border-bottom-width: calc(var(--foo-main-font-size) * 0.3);
+  margin-bottom: calc(var(--foo-main-font-size) * 1);
 }
 
 h3 {
@@ -86,9 +90,16 @@ h5 {
   font-size: calc(var(--foo-main-font-size) * 1.2);
 }
 
+/* ヘッダーとリストの中間として使用 */
 h6 {
+  border-bottom: solid;
+  display: inline-block;
   font-size: calc(var(--foo-main-font-size) * 1);
   border-bottom-width: 0;
+  padding-top: calc(var(--foo-main-font-size) * 0.1);
+  padding-bottom: calc(var(--foo-main-font-size) * 0.1);
+  margin-bottom: calc(var(--foo-main-font-size) * 0.1);
+  margin-top: calc(var(--foo-main-font-size) * 0.1);
 }
 
 /* TODO: このあたりのCSSはあとで整理 */

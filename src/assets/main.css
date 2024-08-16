@@ -6,6 +6,10 @@
 @import "./card.css";
 @import "./article.css";
 
+img {
+  max-width: 100%;
+}
+
 #app {
   margin: 0 auto;
   font-weight: normal;

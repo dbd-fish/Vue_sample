@@ -1,9 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      color="teal-darken-4"
-      image="..\src\components\img\みしまおこぜ.jpg"
-    >
+    <v-app-bar color="teal-darken-4" :image="misima">
       <template v-slot:image>
         <v-img
           gradient="to top right, rgba(19,84,122,.8), rgba(128,208,199,.8)"
@@ -54,20 +51,17 @@
             <h1 style="border-bottom: None">自己紹介</h1>
           </div>
           <div class="md-main">
-            <v-img
-              class="main-img"
-              src="src\components\img\pforile.png"
-              alt="自己紹介"
-            ></v-img>
+            <v-img class="main-img" :src="profile_img" alt="自己紹介"></v-img>
             <p>
-              愛知県内在住のWebエンジニア兼IT講師。<br />
-              Webバックエンドがメインだが、画面を作ったり環境構築もできる。<br />
-              IT講師ではJavaなどを教えている。<br />
+              愛知県在住のエンジニア。<br />
+              webバックエンド業務をメインとして活動中。<br />
+              画面の修正やインフラ周りの仕様確認などもやったりします。<br />
+              Javaのサブ講師など開発業務以外でも活動しています。
             </p>
             <h2>資格</h2>
             <ul>
               <li>AWS Certified Cloud Practitioner (CLF)</li>
-              <li>AWS Certified Solutions Architect – Associate</li>
+              <li>AWS Certified Solutions Architect - Associate</li>
               <li>Python 3 エンジニア認定データ分析</li>
             </ul>
 
@@ -85,7 +79,7 @@
             <h2>言語</h2>
             PHP、Python、Java、HTML、CSS、JavaScript、C、ASMなど色々やってきました。
             <h2>フレームワーク</h2>
-            Larave、Django、Vue.js、FastAPI
+            Larave、Django、Vue.jsなど
 
             <h2>DB</h2>
             Postgres、DynamoDB、MySQL
@@ -107,8 +101,8 @@
             <router-link to="/my_resume"> こちら </router-link>
             をご覧ください。
             <h1>趣味</h1>
-            魚を調理すること<br />
-            たまにゲームをすること<br />
+            魚をさばくこと。<br />
+            たまにPCゲームをすること。<br />
           </div>
         </v-col>
         <v-col
@@ -149,6 +143,8 @@
 </template>
 
 <script setup>
+import profile_img from "@/components/img/profile.png";
+import misima from "@/components/img/misima.jpg";
 import { useStoreMain } from "@/stores/store_main";
 import profile_card from "@/components/profile_card.vue";
 import com_footer from "@/components/com_footer.vue";
