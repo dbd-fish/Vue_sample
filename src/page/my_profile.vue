@@ -56,12 +56,14 @@
               愛知県在住のエンジニア。<br />
               webバックエンド業務をメインとして活動中。<br />
               画面の修正やインフラ周りの仕様確認などもやったりします。<br />
-              Javaのサブ講師など開発業務以外でも活動しています。
+              新人研修の講師など開発業務以外でも活動しています。
             </p>
             <h2>資格</h2>
             <ul>
-              <li>AWS Certified Cloud Practitioner (CLF)</li>
-              <li>AWS Certified Solutions Architect - Associate</li>
+              <li>AWS Certified Cloud Practitioner (2024/11/20まで)</li>
+              <li>
+                AWS Certified Solutions Architect - Associate (2024/11/20まで)
+              </li>
               <li>Python 3 エンジニア認定データ分析</li>
             </ul>
 
