@@ -45,8 +45,7 @@ https://github.com/dbd-fish/Vue_sample<br>
     ![mdファイル運用説明](/src/components/img/home_page_image.jpg)
     <br>
 - Vue3, Vue Router4, Piniaなど最新の技術を導入<br>
-    情報が少ない最新のバージョンを使用することで、ある程度の調査能力の証明になると信じています。<br>
-    ただし、解決までに時間がかかってしまう場合もありました。
+    情報が少ない最新のバージョンを使用して構成しました。（2023年10月当時）<br>
 ## このブログ作成で苦労した点
 - JavaScriptフレームワーク(Vue, Vue Router, Pinia)の仕組み理解<br>
     SPAやコンポーネントや状態管理など初めて触れることが多く調査と理解に時間がかかりました。<br>
