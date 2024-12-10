@@ -60,14 +60,29 @@
 
             <h2>プロダクト</h2>
             <ul>
-              <li>本ブログ(予定)</li>
+              <li>
+                <a
+                  href="https://github.com/dbd-fish/Vue_sample"
+                  target="_blank"
+                >
+                  Vueで構成した本サイト
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/dbd-fish/sample_FastAPI_system"
+                  target="_blank"
+                >
+                  FastAPIで作成したサンプルプロジェクト
+                </a>
+              </li>
             </ul>
 
-            <h2>その他</h2>
+            <!-- <h2>その他</h2>
             <ul>
               <li>太陽光を用いたマイニング(予定)</li>
               <li>本ブログの広告収入(予定)</li>
-            </ul>
+            </ul> -->
           </div>
         </v-col>
         <v-col
