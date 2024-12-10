@@ -50,7 +50,7 @@ const routes = [
     path: "/service_page",
     name: "service_page",
     component: service_page,
-    meta: { title: "事業内容" },
+    meta: { title: "業務内容＆ポートフォリオ" },
   },
 
   {

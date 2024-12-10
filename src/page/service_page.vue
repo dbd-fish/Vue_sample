@@ -48,7 +48,7 @@
           class="justify-center align-start"
         >
           <div class="md-header">
-            <h1 style="border-bottom: None">事業内容</h1>
+            <h1 style="border-bottom: None">業務内容＆ポートフォリオ</h1>
           </div>
           <div class="md-main">
             <h2>フリーランス業務</h2>
@@ -58,7 +58,7 @@
               <li>プログラミングスクールのコーチ</li>
             </ul>
 
-            <h2>プロダクト</h2>
+            <h2>ポートフォリオ</h2>
             <ul>
               <li>
                 <a

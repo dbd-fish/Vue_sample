@@ -37,7 +37,7 @@ Vue_sample/
 │   │   ├── my_resume.vue            # 職務経歴ページを表示するVueコンポーネント
 │   │   ├── private_article_list.vue # 趣味関連の記事のリストページコンポーネント
 │   │   ├── request_page.vue         # お問い合わせページを表示するVueコンポーネント
-│   │   └── service_page.vue         # 事業内容ページを表示するVueコンポーネント
+│   │   └── service_page.vue         # 業務内容＆ポートフォリオページを表示するVueコンポーネント
 │   ├── store/              # 状態管理ライブラリPiniaのストアを格納するディレクトリ
 │   ├── App.vue             # アプリケーションのルートコンポーネント
 │   ├── router.js           # Vue Routerの設定を行うファイル
